@@ -35,6 +35,6 @@ A creative, interactive page showing the newest AI tools, models, and updates. E
 
 ## Learn page (`/learn`)
 - Static route at `app/learn/page.tsx`. The map is a client component in `components/learn/LearnMap.tsx`.
-- Lesson content is data in `lib/learn-map.ts`: four levels, prerequisites, steps, an example snippet, a check question, and official sources per node.
-- The map draws prerequisites as SVG curves between absolutely positioned nodes. Keyboard users move with arrow keys. Progress is stored in `localStorage` under `updatemeonai.learn.progress`.
+- Lesson content is data in `lib/learn-map.ts`: four levels, prerequisites, steps, an example snippet, a check question, 2–3 "Check your understanding" multiple-choice questions (one correct answer and a one-sentence explanation each), and official sources per node.
+- The map draws prerequisites as SVG curves between absolutely positioned nodes. Keyboard users move with arrow keys. Progress is stored in `localStorage` under `updatemeonai.learn.progress`. Quiz answers are stored separately under `updatemeonai.learn.quiz` as `{"<nodeId>:<questionIndex>": choiceIndex}`; each question locks after one answer.
 - The teaching method is in `docs/learning-method.md`.

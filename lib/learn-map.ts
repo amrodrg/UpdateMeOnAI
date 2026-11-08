@@ -3,6 +3,19 @@ export interface SourceLink {
   url: string;
 }
 
+export interface QuizChoice {
+  text: string;
+  correct: boolean;
+}
+
+export interface QuizQuestion {
+  question: string;
+  /** Exactly one choice must have correct: true. */
+  choices: QuizChoice[];
+  /** One sentence shown after the learner answers. */
+  explanation: string;
+}
+
 export interface LearnNode {
   id: string;
   title: string;
@@ -22,6 +35,8 @@ export interface LearnNode {
   example: { file: string; code: string };
   /** A question to check understanding. */
   checkQuestion: string;
+  /** Multiple-choice questions answered client-side. Two or three per node. */
+  quiz: QuizQuestion[];
   sources: SourceLink[];
 }
 
@@ -54,6 +69,25 @@ Constraints: max 5 bullets, each with a source link.
 Output: markdown list.`,
     },
     checkQuestion: "Why does a prompt that names an output format usually give more consistent results?",
+    quiz: [
+      {
+        question: "Which part of a prompt most directly makes the output shape consistent from run to run?",
+        choices: [
+          { text: "A longer prompt with more adjectives", correct: false },
+          { text: "An explicit output format", correct: true },
+          { text: "Writing the prompt in capital letters", correct: false },
+        ],
+        explanation: "A stated format removes guessing about structure, so each run returns the same shape of answer.",
+      },
+      {
+        question: "Why attach a file as context instead of pasting its contents into the prompt?",
+        choices: [
+          { text: "Attached files are always more accurate than the model's answers", correct: false },
+          { text: "It gives the model specific facts it does not already have, without retyping them", correct: true },
+        ],
+        explanation: "Context files supply the material the model needs for this task, and they stay with the prompt for reuse.",
+      },
+    ],
     sources: [
       {
         label: "Prompt files in Copilot",
@@ -82,6 +116,25 @@ Output: markdown list.`,
 - Keep components in components/, data helpers in lib/.`,
     },
     checkQuestion: "What belongs in always-on instructions, and what belongs in a skill?",
+    quiz: [
+      {
+        question: "Where does this lesson say repository-wide, always-on instructions go?",
+        choices: [
+          { text: "In a file in a single chat session that you delete afterwards", correct: false },
+          { text: ".github/copilot-instructions.md", correct: true },
+          { text: "In the package.json scripts field", correct: false },
+        ],
+        explanation: "Repository instructions are read for chats in that repository, so you write the rules once.",
+      },
+      {
+        question: "Which kind of content suits a skill better than always-on instructions?",
+        choices: [
+          { text: "A short rule that applies to every task, such as using strict TypeScript", correct: false },
+          { text: "A repeatable procedure that is only needed when a matching task comes up", correct: true },
+        ],
+        explanation: "Skills load only when the task matches, so long procedures do not clutter every chat.",
+      },
+    ],
     sources: [
       {
         label: "Custom instructions",
@@ -114,6 +167,25 @@ Output: markdown list.`,
 }`,
     },
     checkQuestion: "What is the difference between a model answering from memory and an agent calling a tool?",
+    quiz: [
+      {
+        question: "What does a tool let an agent do that a model answering from memory cannot?",
+        choices: [
+          { text: "Make the answer longer and more detailed", correct: false },
+          { text: "Read live data or act through a connected service while it works", correct: true },
+          { text: "Skip the prompt entirely", correct: false },
+        ],
+        explanation: "A tool call fetches current data or performs an action, instead of relying only on what the model learned earlier.",
+      },
+      {
+        question: "What does the mcpServers block in .mcp.json define?",
+        choices: [
+          { text: "The servers the agent can connect to for its tools", correct: true },
+          { text: "The steps of a skill", correct: false },
+        ],
+        explanation: "Each entry names a server, and the agent can then call the tools that server provides.",
+      },
+    ],
     sources: [
       { label: "Model Context Protocol", url: "https://modelcontextprotocol.io" },
       {
@@ -147,6 +219,25 @@ description: Write release notes from merged pull requests. Use when the user as
 3. Write one line per PR with its number.`,
     },
     checkQuestion: "Why is the description in the frontmatter the most important line of a skill?",
+    quiz: [
+      {
+        question: "What does the agent use to decide whether to load a skill?",
+        choices: [
+          { text: "The name and description in the SKILL.md frontmatter", correct: true },
+          { text: "The file size of the skill folder", correct: false },
+          { text: "Whether the skill is listed in package.json", correct: false },
+        ],
+        explanation: "The agent matches the task against the description, so a vague description means the skill is missed.",
+      },
+      {
+        question: "Where can a project skill be stored in the repository?",
+        choices: [
+          { text: "In .github/skills/<name>/SKILL.md", correct: true },
+          { text: "Only in a file named README.md at the repository root", correct: false },
+        ],
+        explanation: "Project skills live under .github/skills (or .claude/skills or .agents/skills), one folder per skill.",
+      },
+    ],
     sources: [
       {
         label: "Agent skills for Copilot",
@@ -180,6 +271,25 @@ tools: ["read", "search"]
 You review changes. Report findings with file and line. Do not edit files.`,
     },
     checkQuestion: "What does a custom agent add that a single prompt does not?",
+    quiz: [
+      {
+        question: "Which frontmatter property is required for a custom agent?",
+        choices: [
+          { text: "tools", correct: false },
+          { text: "model", correct: false },
+          { text: "description", correct: true },
+        ],
+        explanation: "The description is the only required property; name, tools, and model are optional.",
+      },
+      {
+        question: "What happens when an agent has tools: [] in its frontmatter?",
+        choices: [
+          { text: "All tools are enabled", correct: false },
+          { text: "All tools are disabled for the agent", correct: true },
+        ],
+        explanation: "An empty list turns every tool off, while omitting the tools property enables all of them.",
+      },
+    ],
     sources: [
       {
         label: "Custom agents",
@@ -211,6 +321,25 @@ Stop when every file is checked.
 Return: a list of file:line, one per line. Nothing else.`,
     },
     checkQuestion: "Why does a subagent return a short report instead of its whole working history?",
+    quiz: [
+      {
+        question: "What is the main benefit of giving a subagent its own context?",
+        choices: [
+          { text: "Its reading history does not fill up the main conversation", correct: true },
+          { text: "It can edit files without any permission", correct: false },
+          { text: "It always finishes faster than the main agent", correct: false },
+        ],
+        explanation: "A separate context keeps the bulk of the reading out of the main conversation, which only needs the result.",
+      },
+      {
+        question: "Which part belongs in the brief you give a subagent?",
+        choices: [
+          { text: "The inputs, a stop condition, and the output format", correct: true },
+          { text: "Your entire chat history with the model", correct: false },
+        ],
+        explanation: "A clear brief lets the subagent work without guessing when to stop or what to return.",
+      },
+    ],
     sources: [
       {
         label: "Use subagents in Copilot",
@@ -239,6 +368,24 @@ Return: a list of file:line, one per line. Nothing else.`,
 4. Open a pull request only if the tests pass.`,
     },
     checkQuestion: "Where should a workflow stop and wait for a person?",
+    quiz: [
+      {
+        question: "Why end a workflow with a verification step?",
+        choices: [
+          { text: "So a bad result is caught before it is used or merged", correct: true },
+          { text: "So the workflow runs more slowly and costs less", correct: false },
+        ],
+        explanation: "A check such as tests or a diff review is what makes the outcome repeatable and safe to act on.",
+      },
+      {
+        question: "Which step should stop and wait for a person?",
+        choices: [
+          { text: "A step that needs a human decision", correct: true },
+          { text: "A step that fetches a list of news items", correct: false },
+        ],
+        explanation: "The lesson marks steps that need a human decision so the workflow pauses there instead of guessing.",
+      },
+    ],
     sources: [
       {
         label: "Dynamic workflows in Claude Code",
@@ -267,6 +414,24 @@ Writer: drafts the change. Output: a diff.
 Reviewer: checks the diff. Output: approve or list of fixes.`,
     },
     checkQuestion: "Why should a team have one agent that decides, not several that all can?",
+    quiz: [
+      {
+        question: "Why should exactly one agent in a team have the final say?",
+        choices: [
+          { text: "So there is one clear owner for accepting results, with no conflicting decisions", correct: true },
+          { text: "So the other agents never have to write any output", correct: false },
+        ],
+        explanation: "One owner prevents two agents from accepting or rejecting the same result in different ways.",
+      },
+      {
+        question: "What should each handoff between agents contain?",
+        choices: [
+          { text: "Nothing, because agents can guess what the next one needs", correct: false },
+          { text: "The output format and the information the next agent needs", correct: true },
+        ],
+        explanation: "A defined handoff means no agent has to guess what the previous one produced.",
+      },
+    ],
     sources: [
       {
         label: "Use subagents in Copilot",
@@ -297,6 +462,24 @@ Never: push to main, change secrets, delete data.
 Output: a pull request for human review.`,
     },
     checkQuestion: "Which single guardrail would have prevented the most damage if an agent went wrong?",
+    quiz: [
+      {
+        question: "Why require a pull request review before anything merges?",
+        choices: [
+          { text: "A person checks the change before it reaches the main branch", correct: true },
+          { text: "It makes the agent run faster", correct: false },
+        ],
+        explanation: "A human review is the approval gate that stops an unchecked autonomous change from landing.",
+      },
+      {
+        question: "Which is a good done condition for an autonomous run?",
+        choices: [
+          { text: "The agent says it feels finished", correct: false },
+          { text: "A check you can run passes, such as npm test", correct: true },
+        ],
+        explanation: "A runnable check gives a clear, verifiable stop point instead of relying on the agent's own opinion.",
+      },
+    ],
     sources: [
       {
         label: "GitHub Copilot in the cloud",
