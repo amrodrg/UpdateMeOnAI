@@ -18,7 +18,7 @@ export default async function Home() {
   const news = await loadNews();
   return (
     <main className="mx-auto max-w-6xl px-4 pb-16 pt-12 sm:px-6">
-      <header className="mb-12 max-w-3xl">
+      <header className="mb-12 max-w-3xl border-t-4 border-double border-white/25 pt-8">
         <h1 className="font-display text-5xl font-medium leading-[1.05] tracking-tight text-white sm:text-7xl">
           UpdateMeOnAI
         </h1>
