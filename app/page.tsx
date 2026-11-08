@@ -1,5 +1,6 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
+import Link from "next/link";
 import NewsFeed from "@/components/NewsFeed";
 import type { NewsItem } from "@/lib/news-pipeline";
 
@@ -38,6 +39,14 @@ export default async function Home() {
             })}{" "}
             UTC
           </time>
+        </p>
+        <p className="mt-6">
+          <Link
+            href="/learn"
+            className="inline-flex rounded-full bg-gradient-to-r from-cyan-400 to-violet-400 px-4 py-1.5 text-sm font-semibold text-slate-950 shadow-lg shadow-violet-500/20 transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+          >
+            Learn to build agents →
+          </Link>
         </p>
         <dl className="mt-6 flex justify-center gap-3 text-sm">
           {[
