@@ -16,6 +16,61 @@ export interface QuizQuestion {
   explanation: string;
 }
 
+/** Hands-on practice with an answer key the learner can reveal. */
+export type Exercise = RewriteExercise | SpotMistakeExercise | OrderExercise;
+
+interface ExerciseBase {
+  id: string;
+  title: string;
+  /** What the learner is asked to do. */
+  prompt: string;
+}
+
+/** Rewrite a weak prompt or instruction into a strong one. */
+export interface RewriteExercise extends ExerciseBase {
+  kind: "rewrite";
+  weakText: string;
+  /** One strong example rewrite. Several answers may be valid. */
+  answerKey: string;
+}
+
+/** Pick the one line or statement that is wrong in a snippet. */
+export interface SpotMistakeExercise extends ExerciseBase {
+  kind: "spot-mistake";
+  file: string;
+  code: string;
+  /** Exactly one choice must have correct: true. */
+  choices: QuizChoice[];
+  /** One sentence shown after the answer is revealed. */
+  explanation: string;
+}
+
+/** Put scrambled workflow steps into the correct order. */
+export interface OrderExercise extends ExerciseBase {
+  kind: "order";
+  /** Steps shown to the learner in scrambled order. */
+  items: string[];
+  /** The same steps in the correct order. */
+  answerKey: string[];
+}
+
+/** A short situation with one best action. Each choice explains itself. */
+export interface ScenarioQuestion {
+  scenario: string;
+  question: string;
+  /** Exactly one choice must have correct: true. */
+  choices: ScenarioChoice[];
+  /** Official page that supports the correct answer. */
+  source: SourceLink;
+}
+
+export interface ScenarioChoice {
+  text: string;
+  correct: boolean;
+  /** Shown after the learner picks this choice. */
+  feedback: string;
+}
+
 export interface LearnNode {
   id: string;
   title: string;
@@ -37,6 +92,10 @@ export interface LearnNode {
   checkQuestion: string;
   /** Multiple-choice questions answered client-side. Two or three per node. */
   quiz: QuizQuestion[];
+  /** Hands-on exercises with answer keys. Three to five per node. */
+  exercises: Exercise[];
+  /** Scenario-based questions with per-choice feedback and a source. */
+  scenarios: ScenarioQuestion[];
   /** Date the sources were last checked against the official docs, YYYY-MM-DD. */
   lastChecked: string;
   sources: SourceLink[];
@@ -53,6 +112,8 @@ export const LEARN_NODES: LearnNode[] = [
   {
     id: "prompts",
     lastChecked: "2026-11-08",
+    exercises: [],
+    scenarios: [],
     title: "Prompts & context",
     blurb: "Say what you want, what good looks like, and what the model already knows.",
     level: 1,
@@ -101,6 +162,8 @@ Output: markdown list.`,
   {
     id: "instructions",
     lastChecked: "2026-11-08",
+    exercises: [],
+    scenarios: [],
     title: "Always-on instructions",
     blurb: "Rules that apply to every chat in a repository, written once.",
     level: 1,
@@ -149,6 +212,8 @@ Output: markdown list.`,
   {
     id: "tools",
     lastChecked: "2026-11-08",
+    exercises: [],
+    scenarios: [],
     title: "Tools & MCP",
     blurb: "Let the agent read live data and take actions through connected services.",
     level: 2,
@@ -202,6 +267,8 @@ Output: markdown list.`,
   {
     id: "skills",
     lastChecked: "2026-11-08",
+    exercises: [],
+    scenarios: [],
     title: "Skills",
     blurb: "A folder with a SKILL.md that teaches one repeatable procedure.",
     level: 2,
@@ -256,6 +323,8 @@ description: Write release notes from merged pull requests. Use when the user as
   {
     id: "agents",
     lastChecked: "2026-11-08",
+    exercises: [],
+    scenarios: [],
     title: "Custom agents",
     blurb: "A specialist persona with its own instructions and a limited set of tools.",
     level: 2,
@@ -311,6 +380,8 @@ You review changes. Report findings with file and line. Do not edit files.`,
   {
     id: "subagents",
     lastChecked: "2026-11-08",
+    exercises: [],
+    scenarios: [],
     title: "Subagents",
     blurb: "A main agent hands a piece of work to a helper with its own clean context.",
     level: 3,
@@ -358,6 +429,8 @@ Return: a list of file:line, one per line. Nothing else.`,
   {
     id: "workflows",
     lastChecked: "2026-11-08",
+    exercises: [],
+    scenarios: [],
     title: "Workflows",
     blurb: "Fixed steps run in order, with checks between them, so the outcome is repeatable.",
     level: 3,
@@ -405,6 +478,8 @@ Return: a list of file:line, one per line. Nothing else.`,
   {
     id: "teams",
     lastChecked: "2026-11-08",
+    exercises: [],
+    scenarios: [],
     title: "Teams of agents",
     blurb: "Several specialist agents, each with one job, coordinated by a lead.",
     level: 4,
@@ -452,6 +527,8 @@ Reviewer: checks the diff. Output: approve or list of fixes.`,
   {
     id: "autonomy",
     lastChecked: "2026-11-08",
+    exercises: [],
+    scenarios: [],
     title: "Autonomy & guardrails",
     blurb: "Let agents run on their own, with limits, logs, and a human approval gate.",
     level: 4,
