@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  applyTopicFilter,
   canonicalUrl,
   categorize,
   extractiveSummary,
@@ -12,14 +13,18 @@ import {
 } from "../lib/news-pipeline";
 import { isRecent } from "../lib/recency";
 
-const keywords = { Models: ["model", "gpt"], Tools: ["tool", "agent"] };
+const keywords = {
+  Models: ["model", "gpt"],
+  Copilot: ["copilot"],
+  exclude: ["microsoft 365 copilot"],
+};
 
 const makeItem = (overrides: Partial<NewsItem> = {}): NewsItem => ({
   id: "id-1",
   title: "Title",
   summary: "Summary",
   publishedAt: "2025-01-01T00:00:00.000Z",
-  category: "Updates",
+  category: "Models",
   sourceName: "Src",
   sourceUrl: "https://example.com/a",
   ...overrides,
@@ -61,18 +66,40 @@ describe("extractiveSummary", () => {
 });
 
 describe("categorize", () => {
-  it("prefers Models over Tools", () => {
-    expect(categorize("New model tool", "", keywords)).toBe("Models");
+  it("prefers Models over Copilot", () => {
+    expect(categorize("New model for Copilot", "", keywords)).toBe("Models");
   });
 
-  it("falls back to Tools then Updates", () => {
-    expect(categorize("Agent launch", "", keywords)).toBe("Tools");
-    expect(categorize("Company news", "", keywords)).toBe("Updates");
+  it("returns Copilot for GitHub Copilot news", () => {
+    expect(categorize("Copilot gets agent mode", "", keywords)).toBe("Copilot");
+  });
+
+  it("drops items that are neither model nor Copilot news", () => {
+    expect(categorize("Company raises funding", "", keywords)).toBeNull();
+    expect(categorize("Hotels booking", "", keywords)).toBeNull();
+  });
+
+  it("ignores excluded phrases such as Microsoft 365 Copilot", () => {
+    expect(categorize("Microsoft 365 Copilot adds Excel features", "", keywords)).toBeNull();
   });
 
   it("matches word prefixes only", () => {
     expect(categorize("Models are great", "", keywords)).toBe("Models");
-    expect(categorize("Hotels booking", "", keywords)).toBe("Updates");
+  });
+});
+
+describe("applyTopicFilter", () => {
+  it("removes off-topic saved items and re-categorizes the rest", () => {
+    const items = [
+      makeItem({ id: "a", title: "New model launch", category: "Models" }),
+      makeItem({ id: "b", title: "Funding round", category: "Models" }),
+      makeItem({ id: "c", title: "Copilot update", category: "Copilot" }),
+    ];
+    const result = applyTopicFilter(items, keywords);
+    expect(result.map((i) => [i.id, i.category])).toEqual([
+      ["a", "Models"],
+      ["c", "Copilot"],
+    ]);
   });
 });
 
@@ -95,6 +122,16 @@ describe("toNewsItem", () => {
       sourceUrl: "https://example.com/gpt",
       publishedAt: "2025-02-01T10:00:00.000Z",
     });
+  });
+
+  it("returns null for off-topic entries", () => {
+    expect(
+      toNewsItem(
+        { title: "Startup raises $50M", link: "https://e.com/x", isoDate: "2025-01-01" },
+        "S",
+        keywords,
+      ),
+    ).toBeNull();
   });
 
   it("rejects entries missing a title, link, or valid date", () => {
