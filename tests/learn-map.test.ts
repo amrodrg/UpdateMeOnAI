@@ -63,6 +63,45 @@ describe("learn map data", () => {
     }
   });
 
+  it("gives every node 3 to 5 exercises with a valid answer key", () => {
+    for (const node of LEARN_NODES) {
+      expect(node.exercises.length, node.id).toBeGreaterThanOrEqual(3);
+      expect(node.exercises.length, node.id).toBeLessThanOrEqual(5);
+      const ids = node.exercises.map((e) => e.id);
+      expect(new Set(ids).size, `${node.id} exercise ids`).toBe(ids.length);
+      for (const e of node.exercises) {
+        const label = `${node.id}: ${e.id}`;
+        expect(e.prompt.length, label).toBeGreaterThan(0);
+        if (e.kind === "rewrite") {
+          expect(e.answerKey.length, label).toBeGreaterThan(0);
+        } else if (e.kind === "spot-mistake") {
+          expect(e.choices.filter((c) => c.correct), label).toHaveLength(1);
+          expect(e.explanation.length, label).toBeGreaterThan(0);
+        } else {
+          expect(e.answerKey.length, label).toBe(e.items.length);
+          expect([...e.answerKey].sort(), label).toEqual([...e.items].sort());
+        }
+      }
+    }
+  });
+
+  it("gives every node scenario questions with one correct choice and an https source", () => {
+    for (const node of LEARN_NODES) {
+      expect(node.scenarios.length, node.id).toBeGreaterThanOrEqual(1);
+      for (const s of node.scenarios) {
+        expect(s.question.endsWith("?"), `${node.id}: ${s.question}`).toBe(true);
+        expect(s.choices.filter((c) => c.correct), `${node.id}: ${s.question}`).toHaveLength(1);
+        expect(s.source.url, `${node.id}: ${s.source.label}`).toMatch(/^https:\/\//);
+      }
+    }
+  });
+
+  it("includes the cheat-sheet and the two new model and agent-mode nodes", () => {
+    for (const id of ["cheat-sheet", "models", "agent-mode"]) {
+      expect(LEARN_NODES_BY_ID[id], id).toBeDefined();
+    }
+  });
+
   it("suggests the first unlearned node whose prerequisites are learned", () => {
     expect(nextSuggestedNode(new Set())?.id).toBe(LEARN_NODES.find((n) => n.prerequisites.length === 0)?.id);
     const all = new Set(LEARN_NODES.map((n) => n.id));
