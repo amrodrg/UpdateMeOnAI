@@ -3,7 +3,14 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import Link from "next/link";
 import type { NewsItem } from "@/lib/news-pipeline";
-import { CHAPTERS, CONFIG_FILES, RECOMMENDED_SKILLS } from "@/lib/copilot-guide";
+import {
+  CHAPTERS,
+  CONFIG_FILES,
+  CONNECTOR_IDEAS,
+  CONNECTOR_SETUP_STEPS,
+  HIGGSFIELD_MCP_URL,
+  RECOMMENDED_SKILLS,
+} from "@/lib/copilot-guide";
 
 export const metadata: Metadata = {
   title: "GitHub Copilot guide · UpdateMeOnAI",
@@ -60,6 +67,11 @@ export default async function CopilotPage() {
               </a>
             </li>
           ))}
+          <li>
+            <a href="#ideas" className={pillClass}>
+              Connector ideas
+            </a>
+          </li>
           <li>
             <a href="#updates" className={pillClass}>
               Newest updates
@@ -151,6 +163,81 @@ export default async function CopilotPage() {
               </li>
             ))}
           </ul>
+        </section>
+
+        <section id="ideas" aria-labelledby="ideas-title" className={cardClass}>
+          <p className="font-display text-3xl italic text-cyan-300">Ideas</p>
+          <h2 id="ideas-title" className="mt-2 font-display text-4xl font-medium text-white">
+            Make things with Copilot and a connector
+          </h2>
+          <p className="mt-3 max-w-3xl text-slate-300">
+            An MCP connector lets Copilot call an outside tool. Higgsfield connects image and video models, so Copilot
+            can plan a shot, generate the assets, and report back. Each idea below shows the prompt, the result, and
+            the example it came from.
+          </p>
+          <ul className="mt-8 grid gap-6 md:grid-cols-2">
+            {CONNECTOR_IDEAS.map((idea) => (
+              <li
+                key={idea.id}
+                className="group flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-slate-900/40 transition-colors hover:border-cyan-300/40"
+              >
+                <figure className="relative m-0 aspect-video overflow-hidden bg-slate-950/70">
+                  {/* Example media is hosted by the connector vendor; the credit links to its page. */}
+                  <img
+                    src={idea.image.src}
+                    alt={idea.image.alt}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+                  />
+                  <figcaption className="absolute bottom-3 left-3 rounded-full bg-slate-950/70 px-3 py-1 text-xs text-slate-200 backdrop-blur">
+                    Example via{" "}
+                    <a
+                      href={idea.sourceHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={linkClass}
+                    >
+                      {idea.sourceLabel}
+                      <span className="sr-only"> (opens in a new tab)</span>
+                    </a>
+                  </figcaption>
+                </figure>
+                <div className="flex flex-1 flex-col p-6">
+                  <p className="text-xs uppercase tracking-wide text-cyan-300">{idea.connector}</p>
+                  <h3 className="mt-2 font-display text-2xl leading-snug text-white">{idea.title}</h3>
+                  <blockquote className="mt-4 rounded-2xl border-l-2 border-cyan-300/60 bg-slate-950/50 p-4 text-sm leading-relaxed text-slate-200">
+                    <span className="sr-only">Prompt: </span>
+                    {idea.prompt}
+                  </blockquote>
+                  <p className="mt-4 text-sm text-slate-300">
+                    <span className="font-medium text-white">Result: </span>
+                    {idea.outcome}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-10 rounded-3xl border border-white/10 bg-gradient-to-br from-cyan-300/10 via-white/5 to-fuchsia-400/10 p-6 sm:p-8">
+            <h3 className="font-display text-2xl text-white">Connect Higgsfield in four steps</h3>
+            <ol className="mt-5 grid gap-3 md:grid-cols-2">
+              {CONNECTOR_SETUP_STEPS.map((step, i) => (
+                <li key={step} className="flex gap-4 rounded-2xl border border-white/10 bg-slate-950/40 p-4 text-sm text-slate-200">
+                  <span className="font-display text-2xl italic text-cyan-300" aria-hidden="true">
+                    {i + 1}
+                  </span>
+                  <span>{step}</span>
+                </li>
+              ))}
+            </ol>
+            <p className="mt-5 text-sm text-slate-300">
+              Server URL:{" "}
+              <code className="break-all rounded-md bg-slate-950/60 px-2 py-1 font-mono text-xs text-cyan-300">
+                {HIGGSFIELD_MCP_URL}
+              </code>
+            </p>
+          </div>
         </section>
 
         <section id="updates" aria-labelledby="updates-title" className={cardClass}>

@@ -52,5 +52,6 @@ A creative, interactive page showing the newest AI tools, models, and updates. E
 
 ## Copilot guide (`/copilot`)
 - Static route at `app/copilot/page.tsx`. Chapter text, config-file table, and recommended skills are hand-written data in `lib/copilot-guide.ts`. Every link there points to official GitHub or VS Code docs.
+- "Make things with Copilot and a connector" shows Higgsfield MCP ideas (`CONNECTOR_IDEAS` in `lib/copilot-guide.ts`). Each idea has a prompt, a result, and an example image hotlinked from Higgsfield's own pages, credited with a link. Images are never generated.
 - The "Newest Copilot updates" list is extracted from `data/news.json` (category `Copilot`, filtered to items that mention Copilot). Summaries are never generated.
 - Layout reuses card styling from the home page: `rounded-3xl`, `bg-white/5`, `backdrop-blur`, and theme-aware text. Anchor pills jump to each chapter, and all focus states use `focus-visible:ring-cyan-300`.
