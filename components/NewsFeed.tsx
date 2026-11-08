@@ -157,7 +157,7 @@ export default function NewsFeed({ items, generatedAt }: { items: NewsItem[]; ge
                 </h2>
                 {item.summary && (
                   <p
-                    className={`mt-3 flex-1 leading-relaxed text-slate-300 ${
+                    className={`mt-3 line-clamp-3 flex-1 break-words leading-relaxed text-slate-300 ${
                       isLead ? "max-w-2xl text-base sm:text-lg" : "text-sm"
                     }`}
                   >
