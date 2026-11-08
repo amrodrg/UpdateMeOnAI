@@ -95,6 +95,18 @@ export function toNewsItem(
   };
 }
 
+/**
+ * Combines freshly fetched items with previously saved ones. Keeps saved items when a
+ * feed is temporarily down, so a single failed fetch never empties the page.
+ * Incoming items win on duplicate ids because they carry the latest feed text.
+ */
+export function mergeItems(existing: NewsItem[], incoming: NewsItem[]): NewsItem[] {
+  const byId = new Map<string, NewsItem>();
+  for (const item of existing) byId.set(item.id, item);
+  for (const item of incoming) byId.set(item.id, item);
+  return [...byId.values()];
+}
+
 /** Drops items older than maxAgeDays, dedupes by id, sorts newest first, caps the count. */
 export function finalizeItems(
   items: NewsItem[],

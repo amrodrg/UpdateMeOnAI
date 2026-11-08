@@ -39,9 +39,23 @@ export default async function Home() {
             UTC
           </time>
         </p>
+        <dl className="mt-6 flex justify-center gap-3 text-sm">
+          {[
+            { label: "Stories", value: news.items.length },
+            { label: "Sources", value: new Set(news.items.map((i) => i.sourceName)).size },
+          ].map((stat) => (
+            <div
+              key={stat.label}
+              className="flex items-baseline gap-2 rounded-full bg-white/5 px-4 py-1.5 ring-1 ring-white/10"
+            >
+              <dt className="text-slate-400">{stat.label}</dt>
+              <dd className="font-bold text-white">{stat.value}</dd>
+            </div>
+          ))}
+        </dl>
       </header>
 
-      <NewsFeed items={news.items} />
+      <NewsFeed items={news.items} generatedAt={news.generatedAt} />
 
       <footer className="mt-16 border-t border-white/10 pt-6 text-center text-xs text-slate-500">
         Summaries are excerpts from the original sources. Read the full report via the link on

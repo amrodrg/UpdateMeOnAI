@@ -4,7 +4,10 @@
     { "name": "Google DeepMind", "feedUrl": "https://deepmind.google/blog/rss.xml" },
     { "name": "Google AI Blog", "feedUrl": "https://blog.google/technology/ai/rss/" },
     { "name": "Hugging Face", "feedUrl": "https://huggingface.co/blog/feed.xml" },
-    { "name": "Simon Willison", "feedUrl": "https://simonwillison.net/atom/everything/" }
+    { "name": "Simon Willison", "feedUrl": "https://simonwillison.net/atom/everything/" },
+    { "name": "Mistral AI", "feedUrl": "https://mistral.ai/news/rss" },
+    { "name": "The Verge AI", "feedUrl": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml" },
+    { "name": "TechCrunch AI", "feedUrl": "https://techcrunch.com/category/artificial-intelligence/feed/" }
   ],
   "categoryKeywords": {
     "Models": ["model", "release", "weights", "benchmark", "llm", "gemini", "claude", "gpt", "llama", "mistral"],
