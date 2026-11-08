@@ -37,6 +37,8 @@ export interface LearnNode {
   checkQuestion: string;
   /** Multiple-choice questions answered client-side. Two or three per node. */
   quiz: QuizQuestion[];
+  /** Date the sources were last checked against the official docs, YYYY-MM-DD. */
+  lastChecked: string;
   sources: SourceLink[];
 }
 
@@ -50,6 +52,7 @@ export const LEVEL_LABELS: Record<LearnNode["level"], string> = {
 export const LEARN_NODES: LearnNode[] = [
   {
     id: "prompts",
+    lastChecked: "2026-11-08",
     title: "Prompts & context",
     blurb: "Say what you want, what good looks like, and what the model already knows.",
     level: 1,
@@ -97,6 +100,7 @@ Output: markdown list.`,
   },
   {
     id: "instructions",
+    lastChecked: "2026-11-08",
     title: "Always-on instructions",
     blurb: "Rules that apply to every chat in a repository, written once.",
     level: 1,
@@ -144,6 +148,7 @@ Output: markdown list.`,
   },
   {
     id: "tools",
+    lastChecked: "2026-11-08",
     title: "Tools & MCP",
     blurb: "Let the agent read live data and take actions through connected services.",
     level: 2,
@@ -196,6 +201,7 @@ Output: markdown list.`,
   },
   {
     id: "skills",
+    lastChecked: "2026-11-08",
     title: "Skills",
     blurb: "A folder with a SKILL.md that teaches one repeatable procedure.",
     level: 2,
@@ -249,6 +255,7 @@ description: Write release notes from merged pull requests. Use when the user as
   },
   {
     id: "agents",
+    lastChecked: "2026-11-08",
     title: "Custom agents",
     blurb: "A specialist persona with its own instructions and a limited set of tools.",
     level: 2,
@@ -303,6 +310,7 @@ You review changes. Report findings with file and line. Do not edit files.`,
   },
   {
     id: "subagents",
+    lastChecked: "2026-11-08",
     title: "Subagents",
     blurb: "A main agent hands a piece of work to a helper with its own clean context.",
     level: 3,
@@ -349,6 +357,7 @@ Return: a list of file:line, one per line. Nothing else.`,
   },
   {
     id: "workflows",
+    lastChecked: "2026-11-08",
     title: "Workflows",
     blurb: "Fixed steps run in order, with checks between them, so the outcome is repeatable.",
     level: 3,
@@ -395,6 +404,7 @@ Return: a list of file:line, one per line. Nothing else.`,
   },
   {
     id: "teams",
+    lastChecked: "2026-11-08",
     title: "Teams of agents",
     blurb: "Several specialist agents, each with one job, coordinated by a lead.",
     level: 4,
@@ -441,6 +451,7 @@ Reviewer: checks the diff. Output: approve or list of fixes.`,
   },
   {
     id: "autonomy",
+    lastChecked: "2026-11-08",
     title: "Autonomy & guardrails",
     blurb: "Let agents run on their own, with limits, logs, and a human approval gate.",
     level: 4,
