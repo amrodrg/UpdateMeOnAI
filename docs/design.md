@@ -32,3 +32,9 @@ A creative, interactive page showing the newest AI tools, models, and updates. E
 | `category` | Tools, Models, or Updates (keyword match in `sources.json`) |
 | `sourceName` | Feed name, for example "OpenAI" |
 | `sourceUrl` | Link to the original report, opened in a new tab with `rel="noopener noreferrer"` |
+
+## Learn page (`/learn`)
+- Static route at `app/learn/page.tsx`. The map is a client component in `components/learn/LearnMap.tsx`.
+- Lesson content is data in `lib/learn-map.ts`: four levels, prerequisites, steps, an example snippet, a check question, and official sources per node.
+- The map draws prerequisites as SVG curves between absolutely positioned nodes. Keyboard users move with arrow keys. Progress is stored in `localStorage` under `updatemeonai.learn.progress`.
+- The teaching method is in `docs/learning-method.md`.

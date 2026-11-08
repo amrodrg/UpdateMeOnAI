@@ -1,5 +1,6 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
+import Link from "next/link";
 import NewsFeed from "@/components/NewsFeed";
 import type { NewsItem } from "@/lib/news-pipeline";
 
@@ -37,6 +38,14 @@ export default async function Home() {
           <span aria-hidden="true"> · </span>
           {news.items.length} stories from {new Set(news.items.map((i) => i.sourceName)).size}{" "}
           sources
+        </p>
+        <p className="mt-4 text-sm">
+          <Link
+            href="/learn"
+            className="rounded text-cyan-300 underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+          >
+            Learn to build agents
+          </Link>
         </p>
       </header>
 
