@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen bg-slate-950 text-slate-100 antialiased;
+    background-image:
+      radial-gradient(circle at 15% 0%, rgba(34, 211, 238, 0.18), transparent 40%),
+      radial-gradient(circle at 85% 10%, rgba(167, 139, 250, 0.2), transparent 40%),
+      radial-gradient(circle at 50% 100%, rgba(244, 114, 182, 0.12), transparent 45%);
+    background-attachment: fixed;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

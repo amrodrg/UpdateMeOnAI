@@ -1,0 +1,15 @@
+{
+  "sources": [
+    { "name": "OpenAI", "feedUrl": "https://openai.com/news/rss.xml" },
+    { "name": "Google DeepMind", "feedUrl": "https://deepmind.google/blog/rss.xml" },
+    { "name": "Google AI Blog", "feedUrl": "https://blog.google/technology/ai/rss/" },
+    { "name": "Hugging Face", "feedUrl": "https://huggingface.co/blog/feed.xml" },
+    { "name": "Simon Willison", "feedUrl": "https://simonwillison.net/atom/everything/" }
+  ],
+  "categoryKeywords": {
+    "Models": ["model", "release", "weights", "benchmark", "llm", "gemini", "claude", "gpt", "llama", "mistral"],
+    "Tools": ["tool", "sdk", "api", "cli", "plugin", "app", "library", "integration", "agent"]
+  },
+  "maxAgeDays": 30,
+  "maxItems": 200
+}
