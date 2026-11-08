@@ -30,6 +30,17 @@ describe("learn map data", () => {
     LEARN_NODES.forEach((n) => visit(n.id));
   });
 
+  it("gives every node 2 or 3 quiz questions, each with exactly one correct choice and an explanation", () => {
+    for (const node of LEARN_NODES) {
+      expect([2, 3], node.id).toContain(node.quiz.length);
+      for (const q of node.quiz) {
+        expect(q.question.endsWith("?"), `${node.id}: ${q.question}`).toBe(true);
+        expect(q.explanation.length, `${node.id}: ${q.question}`).toBeGreaterThan(0);
+        expect(q.choices.filter((c) => c.correct), `${node.id}: ${q.question}`).toHaveLength(1);
+      }
+    }
+  });
+
   it("gives every node a goal, steps, an example, a check question, and https sources", () => {
     for (const node of LEARN_NODES) {
       expect(node.goal.length, node.id).toBeGreaterThan(0);

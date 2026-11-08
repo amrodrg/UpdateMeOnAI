@@ -11,6 +11,7 @@ import {
 } from "@/lib/learn-map";
 
 const STORAGE_KEY = "updatemeonai.learn.progress";
+const QUIZ_STORAGE_KEY = "updatemeonai.learn.quiz";
 
 const NODE_W = 200;
 const NODE_H = 78;
@@ -26,6 +27,8 @@ const HEIGHT = PAD * 2 + 4 * NODE_H + 3 * ROW_GAP;
 export default function LearnMap() {
   const [selectedId, setSelectedId] = useState<string>(LEARN_NODES[0].id);
   const [learned, setLearned] = useState<Set<string>>(new Set());
+  /** Chosen choice index per quiz question, keyed as `${nodeId}:${questionIndex}`. */
+  const [quizAnswers, setQuizAnswers] = useState<Record<string, number>>({});
   const [loaded, setLoaded] = useState(false);
 
   // Read saved progress after mount so server and client markup match.
@@ -38,6 +41,22 @@ export default function LearnMap() {
     } catch {
       // Corrupt or unavailable storage: start with empty progress.
     }
+    try {
+      const saved = JSON.parse(window.localStorage.getItem(QUIZ_STORAGE_KEY) ?? "{}");
+      if (saved && typeof saved === "object") {
+        const valid: Record<string, number> = {};
+        for (const [key, choice] of Object.entries(saved)) {
+          const [nodeId, index] = key.split(":");
+          const question = LEARN_NODES_BY_ID[nodeId]?.quiz[Number(index)];
+          if (question && typeof choice === "number" && Number.isInteger(choice) && question.choices[choice]) {
+            valid[key] = choice;
+          }
+        }
+        setQuizAnswers(valid);
+      }
+    } catch {
+      // Corrupt or unavailable storage: start with no quiz answers.
+    }
     setLoaded(true);
   }, []);
 
@@ -45,10 +64,11 @@ export default function LearnMap() {
     if (!loaded) return;
     try {
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify([...learned]));
+      window.localStorage.setItem(QUIZ_STORAGE_KEY, JSON.stringify(quizAnswers));
     } catch {
       // Storage may be full or disabled; progress is then session-only.
     }
-  }, [learned, loaded]);
+  }, [learned, quizAnswers, loaded]);
 
   const selected = LEARN_NODES_BY_ID[selectedId];
   const suggested = useMemo(() => nextSuggestedNode(learned), [learned]);
@@ -237,6 +257,45 @@ export default function LearnMap() {
             <div className="rounded-xl bg-violet-400/10 p-4 ring-1 ring-violet-400/30">
               <h3 className="text-sm font-semibold text-violet-200">Check yourself</h3>
               <p className="mt-1 text-sm text-slate-200">{selected.checkQuestion}</p>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-semibold text-white">Check your understanding</h3>
+              <ol className="mt-3 space-y-5">
+                {selected.quiz.map((q, index) => {
+                  const key = `${selected.id}:${index}`;
+                  const picked = quizAnswers[key];
+                  const answered = picked !== undefined;
+                  const correct = answered && q.choices[picked].correct;
+                  return (
+                    <li key={key}>
+                      <fieldset disabled={answered} className="space-y-2">
+                        <legend className="text-sm font-medium text-slate-200">{q.question}</legend>
+                        {q.choices.map((choice, choiceIndex) => (
+                          <label
+                            key={choice.text}
+                            className="flex cursor-pointer items-start gap-2 text-sm text-slate-300 has-[:disabled]:cursor-default"
+                          >
+                            <input
+                              type="radio"
+                              name={`quiz-${key}`}
+                              checked={picked === choiceIndex}
+                              onChange={() => setQuizAnswers((prev) => ({ ...prev, [key]: choiceIndex }))}
+                              className="mt-1 accent-cyan-400"
+                            />
+                            <span>{choice.text}</span>
+                          </label>
+                        ))}
+                      </fieldset>
+                      {answered && (
+                        <p role="status" className={`mt-2 text-sm ${correct ? "text-emerald-300" : "text-amber-300"}`}>
+                          <span className="font-semibold">{correct ? "Correct." : "Not quite."}</span> {q.explanation}
+                        </p>
+                      )}
+                    </li>
+                  );
+                })}
+              </ol>
             </div>
 
             <div>
