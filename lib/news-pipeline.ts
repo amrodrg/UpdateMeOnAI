@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 
-export type Category = "Tools" | "Models" | "Updates";
+export type Category = "Models" | "Copilot";
 
 export interface NewsItem {
   id: string;
@@ -23,8 +23,12 @@ export interface RawFeedItem {
 
 export interface CategoryKeywords {
   Models: string[];
-  Tools: string[];
+  Copilot: string[];
+  /** Phrases removed before matching, so unrelated products (e.g. Microsoft Copilot) don't match. */
+  exclude?: string[];
 }
+
+const escapeRegex = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 export function canonicalUrl(url: string): string {
   const u = new URL(url);
@@ -64,14 +68,34 @@ export function extractiveSummary(text: string | undefined): string {
   return summary;
 }
 
-/** Keyword-based category: Models, then Tools, otherwise Updates. */
-export function categorize(title: string, summary: string, keywords: CategoryKeywords): Category {
-  const haystack = `${title} ${summary}`.toLowerCase();
+/**
+ * Allow-list topic filter. Returns Models or Copilot when the text matches, otherwise null
+ * so the item is dropped. Models is checked first.
+ */
+export function categorize(
+  title: string,
+  summary: string,
+  keywords: CategoryKeywords,
+): Category | null {
+  let haystack = `${title} ${summary}`.toLowerCase();
+  for (const phrase of keywords.exclude ?? []) {
+    haystack = haystack.split(phrase.toLowerCase()).join(" ");
+  }
   const hit = (words: string[]) =>
-    words.some((w) => new RegExp(`\\b${w.toLowerCase()}`).test(haystack));
+    words.some((w) => new RegExp(`\\b${escapeRegex(w.toLowerCase())}`).test(haystack));
   if (hit(keywords.Models)) return "Models";
-  if (hit(keywords.Tools)) return "Tools";
-  return "Updates";
+  if (hit(keywords.Copilot)) return "Copilot";
+  return null;
+}
+
+/** Re-applies the topic rule to saved items, so a rule change also cleans up old data. */
+export function applyTopicFilter(items: NewsItem[], keywords: CategoryKeywords): NewsItem[] {
+  const result: NewsItem[] = [];
+  for (const item of items) {
+    const category = categorize(item.title, item.summary, keywords);
+    if (category) result.push({ ...item, category });
+  }
+  return result;
 }
 
 export function toNewsItem(
@@ -84,12 +108,14 @@ export function toNewsItem(
   if (Number.isNaN(publishedAt.getTime())) return null;
   const summary = extractiveSummary(raw.contentSnippet ?? raw.content);
   const title = stripHtml(raw.title);
+  const category = categorize(title, summary, keywords);
+  if (!category) return null;
   return {
     id: itemId(raw.link),
     title,
     summary,
     publishedAt: publishedAt.toISOString(),
-    category: categorize(title, summary, keywords),
+    category,
     sourceName,
     sourceUrl: raw.link,
   };

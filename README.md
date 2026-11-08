@@ -1,11 +1,11 @@
 # UpdateMeOnAI
 
-An interactive feed of the newest AI tools, models, and updates. Each item shows a short extractive summary, its date, a category (Tools, Models, or Updates), and a link to the original report.
+An interactive feed of new AI model releases and GitHub Copilot news. Each item shows a short extractive summary, its date, a category (Models or Copilot), and a link to the original report. Other AI news (industry, funding, unrelated tools) is excluded.
 
 ## How it works
 
-- `sources.json` lists the RSS/Atom feeds and the keywords used for categories.
-- `scripts/fetch-news.ts` (`npm run fetch-news`) reads the feeds, builds summaries from the feed text (no LLM or API keys), drops items older than 30 days, and writes `data/news.json`.
+- `sources.json` lists the RSS/Atom feeds and the topic keywords. An item is kept only if it matches a `Models` or `Copilot` keyword. Phrases in `exclude` (e.g. "Microsoft 365 Copilot") are removed before matching.
+- `scripts/fetch-news.ts` (`npm run fetch-news`) reads the feeds, builds summaries from the feed text (no LLM or API keys), applies the topic rule to new and saved items, drops items older than 30 days, and writes `data/news.json`.
 - The Next.js site is statically exported (`out/`) and reads `data/news.json` at build time.
 - `.github/workflows/update-news.yml` runs every 6 hours, refreshes the data, rebases on `main`, and deploys to GitHub Pages.
 - Feeds that fail keep their previously saved items. Anthropic and Meta AI have no working RSS feed yet, so they are not included.

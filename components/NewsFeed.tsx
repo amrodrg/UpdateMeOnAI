@@ -5,18 +5,16 @@ import { motion, AnimatePresence, MotionConfig } from "framer-motion";
 import { isRecent } from "@/lib/recency";
 import type { Category, NewsItem } from "@/lib/news-pipeline";
 
-const CATEGORIES: ("All" | Category)[] = ["All", "Tools", "Models", "Updates"];
+const CATEGORIES: ("All" | Category)[] = ["All", "Models", "Copilot"];
 
 const BADGE_STYLES: Record<Category, string> = {
-  Tools: "bg-cyan-400/15 text-cyan-300 ring-cyan-400/40",
+  Copilot: "bg-cyan-400/15 text-cyan-300 ring-cyan-400/40",
   Models: "bg-violet-400/15 text-violet-300 ring-violet-400/40",
-  Updates: "bg-pink-400/15 text-pink-300 ring-pink-400/40",
 };
 
 const ACCENT_RULES: Record<Category, string> = {
-  Tools: "border-t-cyan-400/70",
+  Copilot: "border-t-cyan-400/70",
   Models: "border-t-violet-400/70",
-  Updates: "border-t-pink-400/70",
 };
 
 const formatDate = (iso: string) =>
@@ -41,7 +39,7 @@ export default function NewsFeed({ items, generatedAt }: { items: NewsItem[]; ge
   }, []);
 
   const counts = useMemo(() => {
-    const result: Record<Category, number> = { Tools: 0, Models: 0, Updates: 0 };
+    const result: Record<Category, number> = { Models: 0, Copilot: 0 };
     for (const item of items) result[item.category]++;
     return result;
   }, [items]);

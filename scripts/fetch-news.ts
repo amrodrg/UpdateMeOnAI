@@ -3,6 +3,7 @@ import path from "node:path";
 import Parser from "rss-parser";
 import {
   finalizeItems,
+  applyTopicFilter,
   mergeItems,
   toNewsItem,
   type CategoryKeywords,
@@ -52,7 +53,9 @@ async function main() {
 
   const newsPath = path.join(root, "data", "news.json");
   const previous = await readPrevious(newsPath);
-  const finalItems = finalizeItems(mergeItems(previous, items), {
+  // Re-apply the topic rule to saved items too, so older off-topic entries are removed.
+  const kept = applyTopicFilter(mergeItems(previous, items), config.categoryKeywords);
+  const finalItems = finalizeItems(kept, {
     maxAgeDays: config.maxAgeDays,
     maxItems: config.maxItems,
   });
