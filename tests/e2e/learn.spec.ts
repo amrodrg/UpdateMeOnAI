@@ -18,6 +18,6 @@ test("learn map lets the learner select a lesson and mark it learned", async ({ 
 
 test("home page links to the learn page", async ({ page }) => {
   await page.goto("/");
-  await page.getByRole("link", { name: "Learn to build agents →" }).click();
+  await page.getByRole("link", { name: "Learn to build agents", exact: true }).click();
   await expect(page).toHaveURL(/\/learn\/?$/);
 });
