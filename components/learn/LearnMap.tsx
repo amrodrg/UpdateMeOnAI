@@ -140,7 +140,7 @@ export default function LearnMap() {
 
   return (
     <MotionConfig reducedMotion="user">
-      <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_380px]">
+      <div className="grid grid-cols-[minmax(0,1fr)] gap-8 lg:grid-cols-[minmax(0,1fr)_380px]">
         <section aria-labelledby="learn-map-heading" className="min-w-0">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
             <h2 id="learn-map-heading" className="text-lg font-bold text-white">
