@@ -1,6 +1,24 @@
 {
-  "generatedAt": "2026-11-08T20:11:27.655Z",
+  "generatedAt": "2026-11-08T20:28:49.034Z",
   "items": [
+    {
+      "id": "5f8103aa8ad8e667",
+      "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
+      "summary": "",
+      "publishedAt": "2026-11-07T23:57:46.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/7/link-rel-next/"
+    },
+    {
+      "id": "b7aa5d4fa5c79c45",
+      "title": "Quoting Nilay Patel",
+      "summary": "",
+      "publishedAt": "2026-11-06T17:13:12.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/6/nilay-patel/"
+    },
     {
       "id": "5a90caffb2c87d2e",
       "title": "ToyBlocks: A controlled world for robot learning and evaluation",
@@ -56,13 +74,13 @@
       "sourceUrl": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
     },
     {
-      "id": "1750855042e8ceec",
-      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "id": "f88e63ee2c8108af",
+      "title": "Quoting Paul Ford",
       "summary": "",
-      "publishedAt": "2026-11-05T17:05:16.000Z",
-      "category": "Models",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/"
+      "publishedAt": "2026-11-05T17:34:03.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/5/paul-ford/"
     },
     {
       "id": "616c68177b707eae",
@@ -72,6 +90,15 @@
       "category": "Updates",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/australian-universities-ai-native-graduates"
+    },
+    {
+      "id": "485654c1f98a7cdc",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "summary": "2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
+      "publishedAt": "2026-11-05T17:00:00.000Z",
+      "category": "Models",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
     },
     {
       "id": "14e90e72d3401ddf",
@@ -137,6 +164,15 @@
       "sourceUrl": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor"
     },
     {
+      "id": "cd09dc87fba0a54b",
+      "title": "datasette-llm 0.1a10",
+      "summary": "",
+      "publishedAt": "2026-11-04T15:26:02.000Z",
+      "category": "Models",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/4/datasette-llm/"
+    },
+    {
       "id": "1be4fdd8e6ca80f0",
       "title": "OpenAI to acquire Pierre Computer Company, Inc.",
       "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
@@ -164,6 +200,15 @@
       "sourceUrl": "https://openai.com/index/daybreak-red-aws-govcloud"
     },
     {
+      "id": "b3ab12a34ee36e8a",
+      "title": "datasette-apps 0.3a0",
+      "summary": "",
+      "publishedAt": "2026-11-04T00:29:36.000Z",
+      "category": "Tools",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/4/datasette-apps/"
+    },
+    {
       "id": "295354ff422b0d4d",
       "title": "Introducing Images 2.6",
       "summary": "6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
@@ -182,13 +227,22 @@
       "sourceUrl": "https://openai.com/index/devrev-enterprise-self-service"
     },
     {
-      "id": "23c4f130369cb972",
-      "title": "Agentic cheminformatics with Google Antigravity",
-      "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
-      "publishedAt": "2026-11-03T17:01:49.000Z",
+      "id": "b0671b3fa0f50f91",
+      "title": "datasette-agent 0.5a0",
+      "summary": "",
+      "publishedAt": "2026-11-03T23:13:45.000Z",
       "category": "Tools",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/3/datasette-agent/"
+    },
+    {
+      "id": "0eec722f11509f67",
+      "title": "llm 0.37.1",
+      "summary": "",
+      "publishedAt": "2026-11-03T21:41:42.000Z",
+      "category": "Models",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/3/llm/"
     },
     {
       "id": "4d3938441f216409",
@@ -198,6 +252,15 @@
       "category": "Models",
       "sourceName": "Hugging Face",
       "sourceUrl": "https://huggingface.co/blog/ibm-research/palette-deck-building"
+    },
+    {
+      "id": "b5cba0d011349b3b",
+      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "summary": "",
+      "publishedAt": "2026-11-03T16:29:48.000Z",
+      "category": "Models",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/"
     },
     {
       "id": "25493a43cba550c7",
@@ -227,6 +290,24 @@
       "sourceUrl": "https://openai.com/index/heimstaden"
     },
     {
+      "id": "46933a36d2603a0b",
+      "title": "I discovered a sound that leaks your exact location (and it's everywhere) - YouTube",
+      "summary": "",
+      "publishedAt": "2026-11-03T05:32:25.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/"
+    },
+    {
+      "id": "449ed68b90056fbb",
+      "title": "October sponsors-only newsletter",
+      "summary": "",
+      "publishedAt": "2026-11-03T05:28:59.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/3/october-newsletter/"
+    },
+    {
       "id": "019edb616369c332",
       "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
       "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
@@ -254,6 +335,15 @@
       "sourceUrl": "https://huggingface.co/blog/transformers-mic"
     },
     {
+      "id": "9d52bf97ae057251",
+      "title": "llm 0.37",
+      "summary": "",
+      "publishedAt": "2026-11-02T23:49:30.000Z",
+      "category": "Models",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/2/llm/"
+    },
+    {
       "id": "0d297090385ad5a7",
       "title": "Preparing our next security sprint to harden OpenAI",
       "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
@@ -272,6 +362,15 @@
       "sourceUrl": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties"
     },
     {
+      "id": "996c88dfa31d64c0",
+      "title": "The latest AI news we announced in October 2026",
+      "summary": "Here are Google’s latest AI updates from October 2026",
+      "publishedAt": "2026-11-02T17:45:00.000Z",
+      "category": "Updates",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/"
+    },
+    {
       "id": "277870ffc8d71544",
       "title": "Scaling Git at OpenAI",
       "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
@@ -288,6 +387,15 @@
       "category": "Updates",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/grid-protectors-program"
+    },
+    {
+      "id": "1e75cc35b491a310",
+      "title": "The U.S. Census Bureau and “Super Intelligence”",
+      "summary": "",
+      "publishedAt": "2026-11-02T13:31:26.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/"
     },
     {
       "id": "5a014341bc3fc0f1",
@@ -317,13 +425,49 @@
       "sourceUrl": "https://openai.com/index/qodo-codex-plugin"
     },
     {
-      "id": "59623d61a7aaaf73",
-      "title": "Speeding up planning decisions with AI",
-      "summary": "Google DeepMind and UK government work together to reduce planning assessment times",
-      "publishedAt": "2026-10-30T14:18:30.000Z",
+      "id": "e2f2cd3ee0a6015b",
+      "title": "If in doubt, delete the uv.lock file",
+      "summary": "",
+      "publishedAt": "2026-11-01T23:24:22.000Z",
       "category": "Updates",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/"
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/"
+    },
+    {
+      "id": "2dd1a315b516efdb",
+      "title": "Quoting Kyle Kingsbury",
+      "summary": "",
+      "publishedAt": "2026-11-01T16:49:04.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/"
+    },
+    {
+      "id": "785d4ceb71a807a6",
+      "title": "How We Took Over ChatGPT Accounts",
+      "summary": "",
+      "publishedAt": "2026-10-31T23:15:22.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/"
+    },
+    {
+      "id": "9fc5ee213b01bfec",
+      "title": "datasette-llm 0.1a9",
+      "summary": "",
+      "publishedAt": "2026-10-31T22:10:01.000Z",
+      "category": "Models",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/31/datasette-llm/"
+    },
+    {
+      "id": "54f20f9f7f25bd15",
+      "title": "dbreunig/nesformer",
+      "summary": "",
+      "publishedAt": "2026-10-30T21:59:22.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/30/nesformer/"
     },
     {
       "id": "84abd1857de5dfd9",
@@ -353,6 +497,24 @@
       "sourceUrl": "https://openai.com/index/fair-use-benefits-everyone"
     },
     {
+      "id": "88899755dba00e8d",
+      "title": "API credits benefit for eligible ChatGPT subscriptions",
+      "summary": "",
+      "publishedAt": "2026-10-29T22:48:29.000Z",
+      "category": "Tools",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/29/api-credits/"
+    },
+    {
+      "id": "e65fcafff408f808",
+      "title": "Building a multiplayer game world with autonomous Fable-class models",
+      "summary": "",
+      "publishedAt": "2026-10-29T17:00:26.000Z",
+      "category": "Models",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/"
+    },
+    {
       "id": "9349f418e7bc7ab4",
       "title": "An updated Model Spec for more capable and beneficial AI",
       "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
@@ -360,6 +522,15 @@
       "category": "Models",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/updated-model-spec"
+    },
+    {
+      "id": "2d0c2102a7199551",
+      "title": "Quoting Ben Hylak",
+      "summary": "",
+      "publishedAt": "2026-10-29T14:06:27.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/29/ben-hylak/"
     },
     {
       "id": "e508e29ae812fe58",
@@ -425,6 +596,15 @@
       "sourceUrl": "https://huggingface.co/blog/anydecisionmodel"
     },
     {
+      "id": "bfb31ceb6c55c182",
+      "title": "Quoting Ted Sanders",
+      "summary": "",
+      "publishedAt": "2026-10-28T23:23:21.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/28/ted-sanders/"
+    },
+    {
       "id": "16681fd606d5f699",
       "title": "Evernote turns AI-driven discovery into paid subscriptions",
       "summary": "Evernote used ChatGPT Ads to introduce its note-taking app to people working with AI. The team tracked how often free trials led to paid subscriptions.",
@@ -434,13 +614,22 @@
       "sourceUrl": "https://openai.com/ads/customers/evernote"
     },
     {
-      "id": "3e32bae570ff21ee",
-      "title": "Gemini 4 Carbon: Our next frontier model",
+      "id": "5e9e44475572a259",
+      "title": "GitHub Octoverse 2026",
       "summary": "",
-      "publishedAt": "2026-10-28T17:00:58.000Z",
-      "category": "Models",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
+      "publishedAt": "2026-10-28T16:45:23.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/"
+    },
+    {
+      "id": "70f2bbbd704a353d",
+      "title": "The October inflection point for vibe game development",
+      "summary": "",
+      "publishedAt": "2026-10-28T13:55:15.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/28/vibe-game-development/"
     },
     {
       "id": "a395c7da350b5086",
@@ -450,6 +639,15 @@
       "category": "Models",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/openai-servicenow-partnership-expansion"
+    },
+    {
+      "id": "6d1e998db622c805",
+      "title": "Quoting Terk Terkowitz",
+      "summary": "",
+      "publishedAt": "2026-10-28T10:09:07.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/28/terk-terkowitz/"
     },
     {
       "id": "e2ed7680c50ae3f0",
@@ -470,6 +668,15 @@
       "sourceUrl": "https://openai.com/index/legora"
     },
     {
+      "id": "68b12007f7f44855",
+      "title": "Game Boy Color on My Conference Badge",
+      "summary": "",
+      "publishedAt": "2026-10-27T19:34:18.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/"
+    },
+    {
       "id": "1c5b51464767c2ad",
       "title": "Build specialized multimodal models with LFM3",
       "summary": "",
@@ -477,15 +684,6 @@
       "category": "Models",
       "sourceName": "Hugging Face",
       "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm3"
-    },
-    {
-      "id": "e960e8891f7d7ad8",
-      "title": "Genie 4: A new generation of world simulation",
-      "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
-      "publishedAt": "2026-10-27T16:01:38.000Z",
-      "category": "Models",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
     },
     {
       "id": "1e3ebf94e41ebe19",
@@ -515,6 +713,15 @@
       "sourceUrl": "https://openai.com/index/check-point-daybreak"
     },
     {
+      "id": "670bdc25a85edb18",
+      "title": "GPT-6.1 Terra",
+      "summary": "",
+      "publishedAt": "2026-10-26T23:53:07.000Z",
+      "category": "Models",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/"
+    },
+    {
       "id": "a9c488820a62ac4a",
       "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
       "summary": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.",
@@ -524,6 +731,15 @@
       "sourceUrl": "https://openai.com/index/greptile-code-review-codex-astra"
     },
     {
+      "id": "7788db21557944eb",
+      "title": "Quoting Jason Koebler",
+      "summary": "",
+      "publishedAt": "2026-10-26T19:00:25.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/26/jason-koebler/"
+    },
+    {
       "id": "35e334c198740f74",
       "title": "Introducing GPT-6.1 Terra",
       "summary": "Delivering fast and capable computer use at scale",
@@ -531,6 +747,24 @@
       "category": "Models",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra"
+    },
+    {
+      "id": "335251daca6e8721",
+      "title": "webframe: evaluated as a scraper and a sandbox",
+      "summary": "",
+      "publishedAt": "2026-10-26T16:15:00.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/26/webframe-evaluation/"
+    },
+    {
+      "id": "9a15b40232fdbf82",
+      "title": "Our newest AI Quest: Mapping the human brain",
+      "summary": "Learn AI literacy via Google’s latest AI Quests lesson on neuroscience, “Polar Peaks.”",
+      "publishedAt": "2026-10-26T16:00:00.000Z",
+      "category": "Updates",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/"
     },
     {
       "id": "8eb6001a836a6e50",
@@ -576,6 +810,24 @@
       "category": "Updates",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/openai-cut-incident-investigation"
+    },
+    {
+      "id": "0186c0f1dfec08d5",
+      "title": "Seam Cutter",
+      "summary": "",
+      "publishedAt": "2026-10-25T15:10:19.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/25/seam-cutter/"
+    },
+    {
+      "id": "6e1fc50fabcdd1bd",
+      "title": "battledrones v14: Compass Rose, a four player map",
+      "summary": "",
+      "publishedAt": "2026-10-24T03:59:57.000Z",
+      "category": "Updates",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/24/battledrones/"
     },
     {
       "id": "ee4c22366ef7e7ab",
@@ -639,15 +891,6 @@
       "category": "Tools",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/decisions-api"
-    },
-    {
-      "id": "8f93170faf71fda6",
-      "title": "Beyond tree cover: mapping the world’s forest types",
-      "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
-      "publishedAt": "2026-10-22T14:30:24.000Z",
-      "category": "Updates",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/"
     },
     {
       "id": "6400feb681472530",
@@ -747,6 +990,15 @@
       "category": "Tools",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
+    },
+    {
+      "id": "78cebe09803b5741",
+      "title": "Southeast Asia’s digital economy to hit $368 billion",
+      "summary": "Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035.",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "category": "Updates",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/"
     },
     {
       "id": "3fe372fb2e8166f0",
@@ -902,15 +1154,6 @@
       "sourceUrl": "https://openai.com/index/introducing-the-rosalind-academic-plan"
     },
     {
-      "id": "3b88e63140868036",
-      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
-      "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
-      "publishedAt": "2026-10-15T16:08:03.000Z",
-      "category": "Updates",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/"
-    },
-    {
       "id": "a60f4a701f887ae8",
       "title": "Teaching students to think and learn through questions",
       "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.",
@@ -992,15 +1235,6 @@
       "sourceUrl": "https://openai.com/index/block-ai-powered-security"
     },
     {
-      "id": "b76b11a1199f73b7",
-      "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
-      "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
-      "publishedAt": "2026-10-14T02:00:14.000Z",
-      "category": "Models",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
-    },
-    {
       "id": "200a5d3dd39c6bfb",
       "title": "The EU’s next chapter in AI is agentic",
       "summary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
@@ -1008,15 +1242,6 @@
       "category": "Tools",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic"
-    },
-    {
-      "id": "1dc99b611b2499a3",
-      "title": "Developing Gemini 4 Argon responsibly and safely",
-      "summary": "",
-      "publishedAt": "2026-10-13T19:43:07.000Z",
-      "category": "Models",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/"
     },
     {
       "id": "53911f98c21c784f",
@@ -1028,22 +1253,13 @@
       "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b"
     },
     {
-      "id": "d96a2391b623b2cb",
-      "title": "Gemini 4 Argon for Robotics",
-      "summary": "",
-      "publishedAt": "2026-10-13T16:01:58.000Z",
-      "category": "Models",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/gemini-4-argon-for-robotics/"
-    },
-    {
-      "id": "4e31b829ae688591",
+      "id": "ed1be8ea5f53c737",
       "title": "Gemini 4 Argon: Built to solve your hardest problems",
-      "summary": "",
-      "publishedAt": "2026-10-13T16:01:52.000Z",
+      "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model.",
+      "publishedAt": "2026-10-13T16:00:00.000Z",
       "category": "Models",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-argon/"
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
     },
     {
       "id": "8d45898e533e591d",
