@@ -152,3 +152,93 @@ export const RECOMMENDED_SKILLS: RecommendedSkill[] = [
     useFor: "A second pair of eyes on a pull request that cannot change the code.",
   },
 ];
+
+export interface ConnectorIdea {
+  id: string;
+  connector: string;
+  title: string;
+  prompt: string;
+  outcome: string;
+  image: { src: string; alt: string };
+  sourceHref: string;
+  sourceLabel: string;
+}
+
+// Example media is hotlinked from the connector vendor's own pages and credited.
+// Each image is linked back to the page where it was published.
+export const HIGGSFIELD_MCP_URL = "https://mcp.higgsfield.ai/mcp";
+
+export const CONNECTOR_IDEAS: ConnectorIdea[] = [
+  {
+    id: "scene-builder",
+    connector: "Higgsfield MCP",
+    title: "Build a cinematic scene from a sentence",
+    prompt: "Use Higgsfield to build a three-shot cinematic scene: a rain-soaked alley at night, then a close-up, then a slow push-in.",
+    outcome: "Storyboard frames and a short clip you can review before you publish.",
+    image: {
+      src: "https://static.higgsfield.ai/skills/cinematic/20260923/posters-v2/scene-builder-poster.webp",
+      alt: "Example poster from Higgsfield's scene builder skill",
+    },
+    sourceHref: "https://higgsfield.ai/mcp",
+    sourceLabel: "Higgsfield MCP page",
+  },
+  {
+    id: "exploded-view",
+    connector: "Higgsfield MCP",
+    title: "Explode a product into its parts",
+    prompt: "Make an exploded-view animation of this product photo with each part labeled and spaced evenly.",
+    outcome: "A product animation for a landing page or a launch post.",
+    image: {
+      src: "https://static.higgsfield.ai/skills/production/20260924/exploded-view-poster.webp",
+      alt: "Example exploded-view product visual from Higgsfield",
+    },
+    sourceHref: "https://higgsfield.ai/mcp",
+    sourceLabel: "Higgsfield MCP page",
+  },
+  {
+    id: "cartoon-shaders",
+    connector: "Higgsfield MCP",
+    title: "Turn a photo into a shaded cartoon",
+    prompt: "Restyle this portrait as a cartoon with flat cel shading and a bold outline, keeping the pose.",
+    outcome: "A stylized avatar or poster for a community post or a channel banner.",
+    image: {
+      src: "https://static.higgsfield.ai/skills/production/20260924/cartoon-shaders-poster.webp",
+      alt: "Example cartoon-shaded portrait from Higgsfield",
+    },
+    sourceHref: "https://higgsfield.ai/mcp",
+    sourceLabel: "Higgsfield MCP page",
+  },
+  {
+    id: "fashion-shoot",
+    connector: "Higgsfield MCP",
+    title: "Shoot a fashion look from a flat-lay",
+    prompt: "Turn this flat-lay of clothes into an editorial fashion photo on a model in a studio with soft key light.",
+    outcome: "Lookbook images for a small shop, without booking a studio.",
+    image: {
+      src: "https://static.higgsfield.ai/landing/gpt-skills/20261016-assets/demos/fashion.webp",
+      alt: "Example fashion editorial image from Higgsfield",
+    },
+    sourceHref: "https://higgsfield.ai/mcp",
+    sourceLabel: "Higgsfield MCP page",
+  },
+  {
+    id: "ai-video",
+    connector: "Higgsfield MCP",
+    title: "Animate a still into a short video",
+    prompt: "Generate a six-second video from this still: the camera slowly orbits the subject, and the lighting shifts to dusk.",
+    outcome: "A short looping clip for social posts, from a single image you already have.",
+    image: {
+      src: "https://static.higgsfield.ai/landing/gpt-skills/demos/20261016-audio/video-generation-poster.webp",
+      alt: "Example video generation poster from Higgsfield",
+    },
+    sourceHref: "https://higgsfield.ai/mcp",
+    sourceLabel: "Higgsfield MCP page",
+  },
+];
+
+export const CONNECTOR_SETUP_STEPS: string[] = [
+  `Add the Higgsfield MCP server with the URL ${HIGGSFIELD_MCP_URL}. No API key is required for the connector itself.`,
+  "In VS Code, add the server to .vscode/mcp.json, or to your user MCP settings. Then start it from the Copilot Chat tools menu.",
+  "Open Copilot Chat in agent mode and describe the result you want. Review each generated asset before you use it.",
+  "Keep the prompt and the output together in your repository notes, so the work can be repeated and credited.",
+];
