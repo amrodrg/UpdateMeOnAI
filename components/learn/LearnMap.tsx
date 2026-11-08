@@ -298,9 +298,25 @@ export default function LearnMap() {
               </ol>
             </div>
 
-            <div>
-              <h3 className="text-sm font-semibold text-white">Official sources</h3>
-              <ul className="mt-2 space-y-1 text-sm">
+            <button
+              type="button"
+              onClick={() => toggleLearned(selected.id)}
+              aria-pressed={learned.has(selected.id)}
+              className={`rounded-full px-5 py-2.5 text-sm font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 ${
+                learned.has(selected.id)
+                  ? "bg-emerald-400/15 text-emerald-300 ring-1 ring-emerald-400/40 hover:bg-emerald-400/20"
+                  : "bg-gradient-to-r from-cyan-400 to-violet-400 text-slate-950 shadow-lg shadow-violet-500/20"
+              }`}
+            >
+              {learned.has(selected.id) ? "Learned ✓ (click to undo)" : "Mark as learned"}
+            </button>
+
+            <footer className="border-t border-white/10 pt-4 text-xs text-slate-400">
+              <p>
+                Last checked: <time dateTime={selected.lastChecked}>{selected.lastChecked}</time>
+              </p>
+              <h3 className="mt-2 font-semibold text-slate-300">Sources</h3>
+              <ul className="mt-1 space-y-1">
                 {selected.sources.map((s) => (
                   <li key={s.url}>
                     <a
@@ -314,20 +330,7 @@ export default function LearnMap() {
                   </li>
                 ))}
               </ul>
-            </div>
-
-            <button
-              type="button"
-              onClick={() => toggleLearned(selected.id)}
-              aria-pressed={learned.has(selected.id)}
-              className={`rounded-full px-5 py-2.5 text-sm font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 ${
-                learned.has(selected.id)
-                  ? "bg-emerald-400/15 text-emerald-300 ring-1 ring-emerald-400/40 hover:bg-emerald-400/20"
-                  : "bg-gradient-to-r from-cyan-400 to-violet-400 text-slate-950 shadow-lg shadow-violet-500/20"
-              }`}
-            >
-              {learned.has(selected.id) ? "Learned ✓ (click to undo)" : "Mark as learned"}
-            </button>
+            </footer>
           </motion.aside>
         </AnimatePresence>
       </div>

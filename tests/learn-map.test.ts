@@ -54,6 +54,15 @@ describe("learn map data", () => {
     }
   });
 
+  it("gives every node a lastChecked date in YYYY-MM-DD format and at least one https source", () => {
+    for (const node of LEARN_NODES) {
+      expect(node.lastChecked, node.id).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      expect(Number.isNaN(Date.parse(node.lastChecked)), node.id).toBe(false);
+      expect(node.sources.length, node.id).toBeGreaterThan(0);
+      expect(node.sources.some((s) => s.url.startsWith("https://")), node.id).toBe(true);
+    }
+  });
+
   it("suggests the first unlearned node whose prerequisites are learned", () => {
     expect(nextSuggestedNode(new Set())?.id).toBe(LEARN_NODES.find((n) => n.prerequisites.length === 0)?.id);
     const all = new Set(LEARN_NODES.map((n) => n.id));

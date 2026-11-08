@@ -7,6 +7,12 @@ test("learn map lets the learner select a lesson and mark it learned", async ({ 
   const firstNode = page.locator("#learn-node-prompts");
   await firstNode.click();
   await expect(firstNode).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator("aside footer").getByText(/Last checked: \d{4}-\d{2}-\d{2}/)).toBeVisible();
+  await expect(page.locator("aside footer").getByRole("heading", { name: "Sources" })).toBeVisible();
+  await expect(page.locator("aside footer").getByRole("link", { name: "Prompt files in Copilot" })).toHaveAttribute(
+    "rel",
+    "noopener noreferrer",
+  );
 
   await page.getByRole("button", { name: "Mark as learned" }).click();
   await expect(page.getByText("1 of ")).toBeVisible();
