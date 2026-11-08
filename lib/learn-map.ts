@@ -167,7 +167,7 @@ description: Write release notes from merged pull requests. Use when the user as
     steps: [
       "Choose a role with a narrow job, such as a reviewer that only reads code.",
       "Create .github/agents/<name>.md with a name, a description, and its instructions.",
-      "Restrict tools to what the role needs. A reviewer does not need to edit files.",
+      "Restrict tools with the tools property in the frontmatter. A reviewer does not need to edit files.",
       "Run it on a small change and check that it stays in its role.",
     ],
     example: {
@@ -175,6 +175,7 @@ description: Write release notes from merged pull requests. Use when the user as
       code: `---
 name: reviewer
 description: Reviews a diff for bugs and missing tests. Read-only.
+tools: ["read", "search"]
 ---
 You review changes. Report findings with file and line. Do not edit files.`,
     },
@@ -183,6 +184,10 @@ You review changes. Report findings with file and line. Do not edit files.`,
       {
         label: "Custom agents",
         url: "https://docs.github.com/en/copilot/concepts/customizations/custom-agents",
+      },
+      {
+        label: "Custom agents configuration (frontmatter reference)",
+        url: "https://docs.github.com/en/copilot/reference/custom-agents-configuration",
       },
     ],
   },
