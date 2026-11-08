@@ -39,10 +39,10 @@ export default async function Home() {
           {news.items.length} stories from {new Set(news.items.map((i) => i.sourceName)).size}{" "}
           sources
         </p>
-        <p className="mt-4 text-sm">
+        <p className="mt-6">
           <Link
             href="/learn"
-            className="rounded text-cyan-300 underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+            className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-5 py-2 text-sm font-medium text-white backdrop-blur transition-colors hover:border-cyan-300/50 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
           >
             Learn to build agents
           </Link>
