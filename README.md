@@ -23,4 +23,4 @@ To build for GitHub Pages, set `GITHUB_PAGES=true`. This sets the `/UpdateMeOnAI
 
 ## Adding a source
 
-Add an entry to `sources.json` with `name` and `url`, then run `npm run fetch-news`. Feeds that fail are skipped and logged.
+Add an entry to `sources.json` with `name` and `feedUrl`, then run `npm run fetch-news`. Feeds that fail are skipped and logged.
