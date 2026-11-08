@@ -9,9 +9,12 @@ import {
   nextSuggestedNode,
   type LearnNode,
 } from "@/lib/learn-map";
+import { activeStreak, bumpStreak, EMPTY_STREAK, localDay, parseStreak, quizScore, type StreakState } from "@/lib/learn-progress";
+import Confetti from "@/components/learn/Confetti";
 
 const STORAGE_KEY = "updatemeonai.learn.progress";
 const QUIZ_STORAGE_KEY = "updatemeonai.learn.quiz";
+const STREAK_STORAGE_KEY = "updatemeonai.learn.streak";
 
 const NODE_W = 200;
 const NODE_H = 78;
@@ -30,9 +33,17 @@ export default function LearnMap() {
   /** Chosen choice index per quiz question, keyed as `${nodeId}:${questionIndex}`. */
   const [quizAnswers, setQuizAnswers] = useState<Record<string, number>>({});
   const [loaded, setLoaded] = useState(false);
+  const [streak, setStreak] = useState<StreakState>(EMPTY_STREAK);
+  /** Node id and count of perfect-score bursts, so confetti replays on each perfect score. */
+  const [burst, setBurst] = useState<{ nodeId: string; n: number } | null>(null);
 
   // Read saved progress after mount so server and client markup match.
   useEffect(() => {
+    try {
+      setStreak(parseStreak(JSON.parse(window.localStorage.getItem(STREAK_STORAGE_KEY) ?? "null")));
+    } catch {
+      // Corrupt or unavailable storage: start with no streak.
+    }
     try {
       const saved = JSON.parse(window.localStorage.getItem(STORAGE_KEY) ?? "[]");
       if (Array.isArray(saved)) {
@@ -65,22 +76,55 @@ export default function LearnMap() {
     try {
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify([...learned]));
       window.localStorage.setItem(QUIZ_STORAGE_KEY, JSON.stringify(quizAnswers));
+      window.localStorage.setItem(STREAK_STORAGE_KEY, JSON.stringify(streak));
     } catch {
       // Storage may be full or disabled; progress is then session-only.
     }
-  }, [learned, quizAnswers, loaded]);
+  }, [learned, quizAnswers, streak, loaded]);
 
   const selected = LEARN_NODES_BY_ID[selectedId];
   const suggested = useMemo(() => nextSuggestedNode(learned), [learned]);
   const isLocked = (node: LearnNode) => node.prerequisites.some((p) => !learned.has(p));
+  const currentStreak = activeStreak(streak, localDay());
+  const progressPct = Math.round((learned.size / LEARN_NODES.length) * 100);
+  const quizSummary = selected
+    ? quizScore(
+        selected.quiz,
+        Object.fromEntries(selected.quiz.map((_, i) => [i, quizAnswers[`${selected.id}:${i}`]]).filter(([, v]) => v !== undefined)),
+      )
+    : { correct: 0, total: 0, answered: 0 };
 
-  const toggleLearned = (id: string) =>
+  const toggleLearned = (id: string) => {
+    if (!learned.has(id)) setStreak((prev) => bumpStreak(prev, localDay()));
     setLearned((prev) => {
       const next = new Set(prev);
       if (next.has(id)) next.delete(id);
       else next.add(id);
       return next;
     });
+  };
+
+  const answerQuestion = (node: LearnNode, index: number, choiceIndex: number) => {
+    const key = `${node.id}:${index}`;
+    const nextAnswers = { ...quizAnswers, [key]: choiceIndex };
+    setQuizAnswers(nextAnswers);
+    setStreak((prev) => bumpStreak(prev, localDay()));
+    const perfect = quizScore(
+      node.quiz,
+      Object.fromEntries(node.quiz.map((_, i) => [i, nextAnswers[`${node.id}:${i}`]])),
+    );
+    if (perfect.answered === perfect.total && perfect.correct === perfect.total) {
+      setBurst((prev) => ({ nodeId: node.id, n: (prev?.n ?? 0) + 1 }));
+    }
+  };
+
+  const retryQuiz = (node: LearnNode) => {
+    setQuizAnswers((prev) => {
+      const next = { ...prev };
+      node.quiz.forEach((_, i) => delete next[`${node.id}:${i}`]);
+      return next;
+    });
+  };
 
   const onNodeKey = (e: React.KeyboardEvent, id: string) => {
     const index = LEARN_NODES.findIndex((n) => n.id === id);
@@ -102,21 +146,48 @@ export default function LearnMap() {
             <h2 id="learn-map-heading" className="text-lg font-bold text-white">
               Learning map
             </h2>
-            <p className="text-sm text-slate-400" aria-live="polite">
-              {learned.size} of {LEARN_NODES.length} learned
-              {suggested && (
-                <>
-                  {" · Next: "}
-                  <button
-                    type="button"
-                    onClick={() => setSelectedId(suggested.id)}
-                    className="font-semibold text-cyan-300 underline-offset-4 hover:underline"
-                  >
-                    {suggested.title}
-                  </button>
-                </>
+            <div className="flex flex-wrap items-center gap-3">
+              {currentStreak > 0 && (
+                <span
+                  className="rounded-full bg-amber-400/15 px-3 py-1 text-xs font-semibold text-amber-200 ring-1 ring-amber-400/40"
+                  aria-label={`Streak: ${currentStreak} ${currentStreak === 1 ? "day" : "days"}`}
+                >
+                  🔥 {currentStreak}-day streak
+                </span>
               )}
-            </p>
+              <p className="text-sm text-slate-400" aria-live="polite">
+                {learned.size} of {LEARN_NODES.length} learned
+                {suggested && (
+                  <>
+                    {" · Next: "}
+                    <button
+                      type="button"
+                      onClick={() => setSelectedId(suggested.id)}
+                      className="font-semibold text-cyan-300 underline-offset-4 hover:underline"
+                    >
+                      {suggested.title}
+                    </button>
+                  </>
+                )}
+              </p>
+            </div>
+          </div>
+
+          <div
+            role="progressbar"
+            aria-label="Lessons learned"
+            aria-valuemin={0}
+            aria-valuemax={LEARN_NODES.length}
+            aria-valuenow={learned.size}
+            aria-valuetext={`${learned.size} of ${LEARN_NODES.length} lessons learned`}
+            className="mb-6 h-2 w-full overflow-hidden rounded-full bg-white/10"
+          >
+            <motion.div
+              className="h-full rounded-full bg-gradient-to-r from-cyan-400 to-violet-400"
+              initial={false}
+              animate={{ width: `${progressPct}%` }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            />
           </div>
 
           <div className="overflow-x-auto rounded-2xl border border-white/10 bg-white/[0.03] p-2">
@@ -166,31 +237,41 @@ export default function LearnMap() {
                 const isDone = learned.has(node.id);
                 const locked = isLocked(node);
                 return (
-                  <button
+                  <motion.button
                     key={node.id}
                     id={`learn-node-${node.id}`}
                     type="button"
                     aria-pressed={isSelected}
-                    aria-label={`${node.title}${isDone ? ", learned" : locked ? ", prerequisites not learned yet" : ""}`}
+                    aria-label={`${node.title}${isDone ? ", learned" : locked ? ", locked until prerequisites are learned" : ""}`}
                     onClick={() => setSelectedId(node.id)}
                     onKeyDown={(e) => onNodeKey(e, node.id)}
-                    className={`absolute flex flex-col justify-between rounded-2xl border p-3 text-left transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 ${
+                    initial={false}
+                    animate={{ opacity: locked ? 0.55 : 1, scale: isDone ? 1.02 : 1 }}
+                    whileHover={locked ? undefined : { y: -2 }}
+                    transition={{ duration: 0.35, ease: "easeOut" }}
+                    className={`absolute flex flex-col justify-between rounded-2xl border p-3 text-left transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 ${
                       isSelected
                         ? "border-violet-400 bg-violet-400/15 shadow-lg shadow-violet-500/20"
-                        : "border-white/10 bg-white/[0.05] hover:-translate-y-0.5 hover:border-cyan-400/40"
-                    } ${locked ? "opacity-60" : ""}`}
+                        : isDone
+                          ? "border-emerald-400/40 bg-emerald-400/10"
+                          : "border-white/10 bg-white/[0.05] hover:border-cyan-400/40"
+                    }`}
                     style={{ left: x(node), top: y(node), width: NODE_W, height: NODE_H }}
                   >
                     <span className="flex items-start justify-between gap-2">
                       <span className="text-sm font-bold leading-snug text-white">{node.title}</span>
-                      {isDone && (
+                      {isDone ? (
                         <span aria-hidden="true" className="text-emerald-300">
                           ✓
                         </span>
-                      )}
+                      ) : locked ? (
+                        <span aria-hidden="true" className="text-xs text-slate-500">
+                          🔒
+                        </span>
+                      ) : null}
                     </span>
                     <span className="line-clamp-2 text-xs leading-snug text-slate-400">{node.blurb}</span>
-                  </button>
+                  </motion.button>
                 );
               })}
             </div>
@@ -259,8 +340,27 @@ export default function LearnMap() {
               <p className="mt-1 text-sm text-slate-200">{selected.checkQuestion}</p>
             </div>
 
-            <div>
-              <h3 className="text-sm font-semibold text-white">Check your understanding</h3>
+            <div className="relative">
+              {burst?.nodeId === selected.id && <Confetti burstKey={String(burst.n)} />}
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <h3 className="text-sm font-semibold text-white">Check your understanding</h3>
+                {quizSummary.answered > 0 && (
+                  <div className="flex items-center gap-3 text-sm">
+                    <span className="text-slate-300" aria-live="polite">
+                      Score: {quizSummary.correct} / {quizSummary.total}
+                    </span>
+                    {quizSummary.answered === quizSummary.total && (
+                      <button
+                        type="button"
+                        onClick={() => retryQuiz(selected)}
+                        className="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-cyan-200 ring-1 ring-white/15 transition hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+                      >
+                        Retry quiz
+                      </button>
+                    )}
+                  </div>
+                )}
+              </div>
               <ol className="mt-3 space-y-5">
                 {selected.quiz.map((q, index) => {
                   const key = `${selected.id}:${index}`;
@@ -280,7 +380,7 @@ export default function LearnMap() {
                               type="radio"
                               name={`quiz-${key}`}
                               checked={picked === choiceIndex}
-                              onChange={() => setQuizAnswers((prev) => ({ ...prev, [key]: choiceIndex }))}
+                              onChange={() => answerQuestion(selected, index, choiceIndex)}
                               className="mt-1 accent-cyan-400"
                             />
                             <span>{choice.text}</span>
