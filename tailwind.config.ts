@@ -10,7 +10,8 @@ const config: Config = {
         updates: "#f472b6",
       },
       fontFamily: {
-        display: ["ui-rounded", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "Georgia", "serif"],
+        sans: ["var(--font-body)", "system-ui", "sans-serif"],
       },
     },
   },

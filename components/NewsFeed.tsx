@@ -137,7 +137,9 @@ export default function NewsFeed({ items, generatedAt }: { items: NewsItem[]; ge
                     {formatDate(item.publishedAt)}
                   </time>
                 </div>
-                <h2 className="text-lg font-bold leading-snug text-white">{item.title}</h2>
+                <h2 className="font-display text-2xl font-medium leading-tight text-white">
+                  {item.title}
+                </h2>
                 {item.summary && (
                   <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-300">{item.summary}</p>
                 )}
@@ -149,7 +151,7 @@ export default function NewsFeed({ items, generatedAt }: { items: NewsItem[]; ge
                     rel="noopener noreferrer"
                     className="font-semibold text-cyan-300 transition group-hover:text-violet-300"
                   >
-                    Read original →
+                    Read original
                     <span className="sr-only"> (opens {item.sourceName} in a new tab)</span>
                   </a>
                 </div>

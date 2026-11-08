@@ -17,20 +17,16 @@ export default async function Home() {
   const news = await loadNews();
   return (
     <main className="mx-auto max-w-6xl px-4 pb-16 pt-12 sm:px-6">
-      <header className="mb-10 text-center">
-        <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-cyan-300">
-          Live AI radar
-        </p>
-        <h1 className="bg-gradient-to-r from-cyan-300 via-violet-300 to-pink-300 bg-clip-text text-4xl font-extrabold text-transparent sm:text-6xl">
+      <header className="mb-12 max-w-3xl">
+        <h1 className="font-display text-5xl font-medium leading-[1.05] tracking-tight text-white sm:text-7xl">
           UpdateMeOnAI
         </h1>
-        <p className="mx-auto mt-4 max-w-2xl text-slate-300">
-          The newest AI tools, models, and updates, summarized. Every card links to the original
-          report.
+        <p className="mt-5 max-w-xl font-display text-xl italic leading-snug text-slate-300 sm:text-2xl">
+          What shipped in AI today, summarized, with a link to every original report.
         </p>
-        <p className="mt-3 text-xs text-slate-500">
-          Last updated{" "}
+        <p className="mt-6 text-sm text-slate-400">
           <time dateTime={news.generatedAt}>
+            Updated{" "}
             {new Date(news.generatedAt).toLocaleString("en-US", {
               dateStyle: "medium",
               timeStyle: "short",
@@ -38,21 +34,10 @@ export default async function Home() {
             })}{" "}
             UTC
           </time>
+          <span aria-hidden="true"> · </span>
+          {news.items.length} stories from {new Set(news.items.map((i) => i.sourceName)).size}{" "}
+          sources
         </p>
-        <dl className="mt-6 flex justify-center gap-3 text-sm">
-          {[
-            { label: "Stories", value: news.items.length },
-            { label: "Sources", value: new Set(news.items.map((i) => i.sourceName)).size },
-          ].map((stat) => (
-            <div
-              key={stat.label}
-              className="flex items-baseline gap-2 rounded-full bg-white/5 px-4 py-1.5 ring-1 ring-white/10"
-            >
-              <dt className="text-slate-400">{stat.label}</dt>
-              <dd className="font-bold text-white">{stat.value}</dd>
-            </div>
-          ))}
-        </dl>
       </header>
 
       <NewsFeed items={news.items} generatedAt={news.generatedAt} />
