@@ -49,3 +49,8 @@ A creative, interactive page showing the newest AI tools, models, and updates. E
 - Lesson content is data in `lib/learn-map.ts`: four levels, prerequisites, steps, an example snippet, a check question, 2–3 "Check your understanding" multiple-choice questions (one correct answer and a one-sentence explanation each), and official sources per node.
 - The map draws prerequisites as SVG curves between absolutely positioned nodes. Keyboard users move with arrow keys. Progress is stored in `localStorage` under `updatemeonai.learn.progress`. Quiz answers are stored separately under `updatemeonai.learn.quiz` as `{"<nodeId>:<questionIndex>": choiceIndex}`; each question locks after one answer.
 - The teaching method is in `docs/learning-method.md`.
+
+## Copilot guide (`/copilot`)
+- Static route at `app/copilot/page.tsx`. Chapter text, config-file table, and recommended skills are hand-written data in `lib/copilot-guide.ts`. Every link there points to official GitHub or VS Code docs.
+- The "Newest Copilot updates" list is extracted from `data/news.json` (category `Copilot`, filtered to items that mention Copilot). Summaries are never generated.
+- Layout reuses card styling from the home page: `rounded-3xl`, `bg-white/5`, `backdrop-blur`, and theme-aware text. Anchor pills jump to each chapter, and all focus states use `focus-visible:ring-cyan-300`.
