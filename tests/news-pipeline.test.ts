@@ -5,10 +5,12 @@ import {
   extractiveSummary,
   finalizeItems,
   itemId,
+  mergeItems,
   stripHtml,
   toNewsItem,
   type NewsItem,
 } from "../lib/news-pipeline";
+import { isRecent } from "../lib/recency";
 
 const keywords = { Models: ["model", "gpt"], Tools: ["tool", "agent"] };
 
@@ -141,5 +143,34 @@ describe("finalizeItems", () => {
       { maxAgeDays: 30, maxItems: 2, now },
     );
     expect(result.map((i) => i.id)).toEqual(["b", "c"]);
+  });
+});
+
+describe("mergeItems", () => {
+  it("keeps existing items that are missing from the new fetch", () => {
+    const result = mergeItems([makeItem({ id: "old" })], [makeItem({ id: "new" })]);
+    expect(result.map((i) => i.id).sort()).toEqual(["new", "old"]);
+  });
+
+  it("prefers incoming items on duplicate ids", () => {
+    const result = mergeItems(
+      [makeItem({ id: "x", title: "stale" })],
+      [makeItem({ id: "x", title: "fresh" })],
+    );
+    expect(result).toHaveLength(1);
+    expect(result[0].title).toBe("fresh");
+  });
+});
+
+describe("isRecent", () => {
+  const now = new Date("2025-03-01T12:00:00.000Z");
+
+  it("is true within the window and false outside it", () => {
+    expect(isRecent(makeItem({ publishedAt: "2025-02-20T00:00:00.000Z" }), now, 48)).toBe(false);
+    expect(isRecent(makeItem({ publishedAt: "2025-02-28T13:00:00.000Z" }), now, 48)).toBe(true);
+  });
+
+  it("ignores items published in the future", () => {
+    expect(isRecent(makeItem({ publishedAt: "2025-03-02T00:00:00.000Z" }), now, 48)).toBe(false);
   });
 });

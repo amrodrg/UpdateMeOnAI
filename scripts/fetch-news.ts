@@ -3,6 +3,7 @@ import path from "node:path";
 import Parser from "rss-parser";
 import {
   finalizeItems,
+  mergeItems,
   toNewsItem,
   type CategoryKeywords,
   type NewsItem,
@@ -23,6 +24,7 @@ async function main() {
   ) as SourcesConfig;
   const parser = new Parser({ timeout: 15000 });
   const items: NewsItem[] = [];
+  let okSources = 0;
 
   for (const source of config.sources) {
     try {
@@ -35,6 +37,7 @@ async function main() {
           count++;
         }
       }
+      okSources++;
       console.log(`[ok] ${source.name}: ${count} items`);
     } catch (err) {
       // One failing source must not stop the whole run.
@@ -42,17 +45,35 @@ async function main() {
     }
   }
 
-  const finalItems = finalizeItems(items, {
+  // If every feed failed, keep the existing data rather than publishing an empty page.
+  if (okSources === 0) {
+    throw new Error("No feeds could be fetched; data/news.json was left unchanged.");
+  }
+
+  const newsPath = path.join(root, "data", "news.json");
+  const previous = await readPrevious(newsPath);
+  const finalItems = finalizeItems(mergeItems(previous, items), {
     maxAgeDays: config.maxAgeDays,
     maxItems: config.maxItems,
   });
 
   await mkdir(path.join(root, "data"), { recursive: true });
   await writeFile(
-    path.join(root, "data", "news.json"),
+    newsPath,
     JSON.stringify({ generatedAt: new Date().toISOString(), items: finalItems }, null, 2) + "\n",
   );
-  console.log(`Wrote ${finalItems.length} items to data/news.json`);
+  console.log(
+    `Wrote ${finalItems.length} items to data/news.json (${okSources}/${config.sources.length} sources ok)`,
+  );
+}
+
+async function readPrevious(file: string): Promise<NewsItem[]> {
+  try {
+    const parsed = JSON.parse(await readFile(file, "utf8")) as { items?: NewsItem[] };
+    return Array.isArray(parsed.items) ? parsed.items : [];
+  } catch {
+    return [];
+  }
 }
 
 main().catch((err) => {

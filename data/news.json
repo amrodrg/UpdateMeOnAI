@@ -1,6 +1,33 @@
 {
-  "generatedAt": "2026-11-08T20:28:49.034Z",
+  "generatedAt": "2026-11-08T20:34:52.593Z",
   "items": [
+    {
+      "id": "54c06e97d6e0a2b7",
+      "title": "Nvidia is investigating Jensen Huang’s relationship with a Chinese spy",
+      "summary": "Nvidia has announced that it is opening an investigation into CEO Jensen Huang and his relationship with Megaspeed executive Alice Huang, who was reportedly recruited by China's Ministry of State Security to spy on the company. A statement posted by the board of directors reads: The NVIDIA Board…",
+      "publishedAt": "2026-11-08T20:22:39.000Z",
+      "category": "Updates",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy"
+    },
+    {
+      "id": "b9c0dd474c98ba84",
+      "title": "Apple is racing to make Siri more agentic",
+      "summary": "Bloomberg's Mark Gurman says CEO John Ternus is pressuring AI czar Craig Federighi to accelerate the Siri roadmap and deliver a powerful AI agent that can compete with OpenAI's Dots or Meta's Muse. While Federighi has delivered a functional version of Siri AI on an incredibly short timeline, the…",
+      "publishedAt": "2026-11-08T19:18:19.000Z",
+      "category": "Tools",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic"
+    },
+    {
+      "id": "c08233254ab55692",
+      "title": "Elvis and Eminem rights holders are suing Suno",
+      "summary": "Suno is facing yet another pair of lawsuits. A group of rights holders of Elvis Presley's music and the publisher of some of Eminem's biggest records are suing the AI music company, claiming it illegally generates music and lyrics that mimic those artists. The lawyers in the Presley suit claim…",
+      "publishedAt": "2026-11-08T17:23:19.000Z",
+      "category": "Updates",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit"
+    },
     {
       "id": "5f8103aa8ad8e667",
       "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
@@ -9,6 +36,141 @@
       "category": "Updates",
       "sourceName": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Nov/7/link-rel-next/"
+    },
+    {
+      "id": "51a247b5b6ae00e9",
+      "title": "After the midterms, things are looking rocky for Elon Musk and data centers",
+      "summary": "On Equity, we unpacked what the midterms mean for the tech industry.",
+      "publishedAt": "2026-11-07T22:07:22.000Z",
+      "category": "Updates",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/"
+    },
+    {
+      "id": "3b069222ecbd3b59",
+      "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
+      "summary": "A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.",
+      "publishedAt": "2026-11-07T21:17:08.000Z",
+      "category": "Updates",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/"
+    },
+    {
+      "id": "1ab28dde47a3074f",
+      "title": "NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake",
+      "summary": "The NYT Cooking app now has a built in AI assistant. \" Yes, I should meal plan more, but I don't, so this is where I'm at. A nightly battle in which the chicken usually wins.",
+      "publishedAt": "2026-11-07T15:50:00.000Z",
+      "category": "Tools",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review"
+    },
+    {
+      "id": "b521172828d62613",
+      "title": "The US let Nvidia sell chips to an empty office in China",
+      "summary": "Concerns are being raised that neither the Commerce Department nor Nvidia are doing their due diligence when it comes to vetting Chinese firms cleared to handle the company's H200 AI chips. \" In fact, the paper could find little evidence that the company exists in any meaningful way: Only scant…",
+      "publishedAt": "2026-11-07T15:43:45.000Z",
+      "category": "Updates",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government"
+    },
+    {
+      "id": "4b429bd7582936e3",
+      "title": "AI broke the cybersecurity world. What’s next?",
+      "summary": "Today, I’m talking with Alex Stamos, chief security officer at Cognition and longtime cybersecurity expert, about what a mess cybersecurity is right now. This episode is part one of a special series looking at AI in real life. I’ve always enjoyed talking to Alex because he’s so direct, and you’re…",
+      "publishedAt": "2026-11-07T15:00:00.000Z",
+      "category": "Updates",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos"
+    },
+    {
+      "id": "eecad6fef1daea32",
+      "title": "Why a new report on Anthropic automating AI development is alarming researchers",
+      "summary": "Anthropic CEO Dario Amodei. | Photo: Jason Henry/Bloomberg via Getty Images Anthropic is using AI to build more powerful AI. And it appears to be working remarkably well, with the company's models improving roughly twice as quickly as a year ago, with little indication of slowing down.",
+      "publishedAt": "2026-11-07T12:30:00.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development"
+    },
+    {
+      "id": "2af345503cb4dc3a",
+      "title": "Crusoe sells troubled Wyoming data center project to Google",
+      "summary": "The deal highlights the challenges of developing massive AI data centers.",
+      "publishedAt": "2026-11-07T01:40:28.000Z",
+      "category": "Updates",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"
+    },
+    {
+      "id": "6c7191a9daddd032",
+      "title": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
+      "summary": "25 trillion in a new round of funding that has raised another $11 billion, according to Bloomberg. That would make it one of the world's most valuable companies, not long after raising $122 billion from investors in March at a valuation of $852 billion. 4 trillion.",
+      "publishedAt": "2026-11-06T23:46:18.000Z",
+      "category": "Updates",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation"
+    },
+    {
+      "id": "a7e1415152c9585b",
+      "title": "China reportedly recruited AI exec to spy on Jensen Huang",
+      "summary": "China's intelligence agency recruited Megaspeed executive Alice Huang to spy on Nvidia CEO Jensen Huang, according to The New York Times. I. chip industry,\" including leaders at Gigabyte, the NYT says.",
+      "publishedAt": "2026-11-06T23:00:44.000Z",
+      "category": "Updates",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy"
+    },
+    {
+      "id": "d9d8ed120c50cfe2",
+      "title": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
+      "summary": "OpenAI has reportedly raised an additional $11 billion as part of a funding round that hasn't closed yet but is expected to in the coming weeks.",
+      "publishedAt": "2026-11-06T22:53:46.000Z",
+      "category": "Updates",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/"
+    },
+    {
+      "id": "f8fe21ba7f368ed1",
+      "title": "All the latest updates on AI data centers",
+      "summary": "Massive new data centers are the physical foundation for tech companies’ hopes and dreams for AI. But the rush to expand warehouses full of energy-hungry servers has also kicked up fights across the world over their impact on power grids, utility bills, nearby communities, and the environment.…",
+      "publishedAt": "2026-11-06T20:02:22.000Z",
+      "category": "Updates",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy"
+    },
+    {
+      "id": "0b47ae94b8dc6c92",
+      "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
+      "summary": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.",
+      "publishedAt": "2026-11-06T18:44:38.000Z",
+      "category": "Tools",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/"
+    },
+    {
+      "id": "a8fc5de6487f58f9",
+      "title": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
+      "summary": "Meta's Muse agents continue to get new features and integrations. Spaces promises to be a new way to interact with the AI helpers.",
+      "publishedAt": "2026-11-06T18:44:20.000Z",
+      "category": "Tools",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/"
+    },
+    {
+      "id": "94d3f146301ece8e",
+      "title": "How a Blue Wave midterm might reshape the AI industry",
+      "summary": "S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center development.",
+      "publishedAt": "2026-11-06T18:00:00.000Z",
+      "category": "Updates",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/"
+    },
+    {
+      "id": "2563b3e6ff404ee3",
+      "title": "After the midterms, is the AI industry in for a rough two years?",
+      "summary": "S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center development.",
+      "publishedAt": "2026-11-06T17:23:52.000Z",
+      "category": "Updates",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/"
     },
     {
       "id": "b7aa5d4fa5c79c45",
@@ -20,6 +182,24 @@
       "sourceUrl": "https://simonwillison.net/2026/Nov/6/nilay-patel/"
     },
     {
+      "id": "97dac9d9308d381a",
+      "title": "Ramp data shows AI spending stalling just as Anthropic nears its IPO",
+      "summary": "AI usage keeps climbing, but spending has stalled. Price cuts and smarter cost controls among the biggest spenders could challenge investor assumptions about AI hypergrowth.",
+      "publishedAt": "2026-11-06T15:54:47.000Z",
+      "category": "Tools",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/"
+    },
+    {
+      "id": "63e1c5c982d99255",
+      "title": "After blocking Muse, Amazon now lets users text Alexa to help them shop",
+      "summary": "Amazon said that the feature will roll out to millions of users in coming weeks.",
+      "publishedAt": "2026-11-06T14:10:00.000Z",
+      "category": "Updates",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/"
+    },
+    {
       "id": "5a90caffb2c87d2e",
       "title": "ToyBlocks: A controlled world for robot learning and evaluation",
       "summary": "",
@@ -29,6 +209,24 @@
       "sourceUrl": "https://huggingface.co/blog/allenai/toyblocks"
     },
     {
+      "id": "a128386b25427955",
+      "title": "Underdog shows off a 32MB speech model in new demo",
+      "summary": "Despite its small size, Underdog's new model can generate both speech and music.",
+      "publishedAt": "2026-11-06T13:02:16.000Z",
+      "category": "Models",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/"
+    },
+    {
+      "id": "9a6eee5802a8318d",
+      "title": "Physicl raises $10M to make the digital world real enough for robots",
+      "summary": "Physicl is trying to solve the sim-to-real gap with a pipeline originally built to market goods online.",
+      "publishedAt": "2026-11-06T13:00:00.000Z",
+      "category": "Updates",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/"
+    },
+    {
       "id": "a0a44ed09dc9a108",
       "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
       "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
@@ -36,6 +234,15 @@
       "category": "Updates",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/partnering-with-hacktron"
+    },
+    {
+      "id": "a83a56374fd6aa91",
+      "title": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
+      "summary": "Clutch, backed by Lightspeed and SignalFire, was last valued at $85 million, according to a source.",
+      "publishedAt": "2026-11-06T06:28:32.000Z",
+      "category": "Tools",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/"
     },
     {
       "id": "5f721228af3682c2",
@@ -56,6 +263,15 @@
       "sourceUrl": "https://huggingface.co/blog/open-asr-leaderboard-liva"
     },
     {
+      "id": "1121cf54e69f72cb",
+      "title": "Airbnb says it’s launching an AI travel agent in the first half of 2027",
+      "summary": "Airbnb says its upcoming AI agent will help travelers plan trips, compare options, manage bookings, and get assistance throughout their stay.",
+      "publishedAt": "2026-11-05T22:40:55.000Z",
+      "category": "Tools",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/"
+    },
+    {
       "id": "bbd492caba72ca54",
       "title": "Cult.fit builds operational muscle with Codex",
       "summary": "fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
@@ -63,6 +279,15 @@
       "category": "Tools",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/cultfit-builds-with-codex"
+    },
+    {
+      "id": "f66d8f2942889cef",
+      "title": "Meta says US users can now video chat with their Muse AI avatar",
+      "summary": "Meta's AI agent can now take calls as a customizable animated avatar, ahead of the launch of a Tamagotchi-like wearable designed to bring Muse to life.",
+      "publishedAt": "2026-11-05T19:48:28.000Z",
+      "category": "Tools",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/"
     },
     {
       "id": "f25b9201ad6bdcc6",
@@ -74,6 +299,42 @@
       "sourceUrl": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
     },
     {
+      "id": "284810c2fd047502",
+      "title": "Meta warns that election backlash against data centers could make AI expansion harder",
+      "summary": "Meta warns that growing political opposition to data centers could threaten future AI investments, as communities push back against massive infrastructure projects.",
+      "publishedAt": "2026-11-05T19:12:39.000Z",
+      "category": "Updates",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/"
+    },
+    {
+      "id": "5f2083e6ffbe0388",
+      "title": "OpenAI released a new cybersecurity model. Is that enough?",
+      "summary": "OpenAI's newest cybersecurity model comes out as AI labs face scrutiny of their work to protect digital infrastructure.",
+      "publishedAt": "2026-11-05T19:06:12.000Z",
+      "category": "Models",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/"
+    },
+    {
+      "id": "20ebb1cb1fa152c7",
+      "title": "OpenAI president Greg Brockman says company could be IPO ready in 2027",
+      "summary": "Speaking at a Wall Street Journal tech conference on Wednesday, the executive touted how the company had been gaining ground in the enterprise market, where rival Anthropic had already successfully made inroads.",
+      "publishedAt": "2026-11-05T18:02:27.000Z",
+      "category": "Updates",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/"
+    },
+    {
+      "id": "b9ca9ce17c9cbad1",
+      "title": "Claude can now analyze your spending with its new Personal Finance tool",
+      "summary": "With Personal Finance in Claude, users can connect their bank and card accounts through Plaid and ask questions about their finances.",
+      "publishedAt": "2026-11-05T18:00:00.000Z",
+      "category": "Models",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/"
+    },
+    {
       "id": "f88e63ee2c8108af",
       "title": "Quoting Paul Ford",
       "summary": "",
@@ -81,6 +342,15 @@
       "category": "Updates",
       "sourceName": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Nov/5/paul-ford/"
+    },
+    {
+      "id": "1750855042e8ceec",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "summary": "",
+      "publishedAt": "2026-11-05T17:05:16.000Z",
+      "category": "Models",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/"
     },
     {
       "id": "616c68177b707eae",
@@ -99,6 +369,24 @@
       "category": "Models",
       "sourceName": "Google AI Blog",
       "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+    },
+    {
+      "id": "9a1f2f6f2756d2c6",
+      "title": "Axiom Math wants to keep AI slop out of mathematics",
+      "summary": "As AI floods math with unchecked proofs, Axiom Math is betting on verification. The startup’s AI agents just formally verified the Stacks Project, one of the field’s biggest libraries.",
+      "publishedAt": "2026-11-05T16:16:45.000Z",
+      "category": "Tools",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/"
+    },
+    {
+      "id": "5bd02a39074589ea",
+      "title": "Le Chonk brings the brains. Studio puts it to work.",
+      "summary": "Build and deploy enterprise agents, workflows and apps faster with Mistral Studio and Le Chonk full control over your models, data and infrastructure.",
+      "publishedAt": "2026-11-05T12:00:14.000Z",
+      "category": "Models",
+      "sourceName": "Mistral AI",
+      "sourceUrl": "https://mistral.ai/news/build-with-studio/"
     },
     {
       "id": "14e90e72d3401ddf",
@@ -243,6 +531,15 @@
       "category": "Models",
       "sourceName": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Nov/3/llm/"
+    },
+    {
+      "id": "23c4f130369cb972",
+      "title": "Agentic cheminformatics with Google Antigravity",
+      "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+      "publishedAt": "2026-11-03T17:01:49.000Z",
+      "category": "Tools",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
     },
     {
       "id": "4d3938441f216409",
@@ -470,6 +767,15 @@
       "sourceUrl": "https://simonwillison.net/2026/Oct/30/nesformer/"
     },
     {
+      "id": "59623d61a7aaaf73",
+      "title": "Speeding up planning decisions with AI",
+      "summary": "Google DeepMind and UK government work together to reduce planning assessment times",
+      "publishedAt": "2026-10-30T14:18:30.000Z",
+      "category": "Updates",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/"
+    },
+    {
       "id": "84abd1857de5dfd9",
       "title": "Making it easier for websites to express AI training preferences",
       "summary": "txt signal to help website operators communicate their AI training preferences to participating providers.",
@@ -540,6 +846,15 @@
       "category": "Models",
       "sourceName": "Hugging Face",
       "sourceUrl": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1"
+    },
+    {
+      "id": "5a25565ab71a8d06",
+      "title": "Le Chonk: Built for Coders, Trusted by Defenders.",
+      "summary": "The weights of Mistral Large 4 (Le Chonk) are now open. A 1T parameter multimodal model, and best open-weight model for coding, trained in Europe.",
+      "publishedAt": "2026-10-29T12:00:07.000Z",
+      "category": "Models",
+      "sourceName": "Mistral AI",
+      "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/"
     },
     {
       "id": "0f01adb2acab0a67",
@@ -614,6 +929,15 @@
       "sourceUrl": "https://openai.com/ads/customers/evernote"
     },
     {
+      "id": "3e32bae570ff21ee",
+      "title": "Gemini 4 Carbon: Our next frontier model",
+      "summary": "",
+      "publishedAt": "2026-10-28T17:00:58.000Z",
+      "category": "Models",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
+    },
+    {
       "id": "5e9e44475572a259",
       "title": "GitHub Octoverse 2026",
       "summary": "",
@@ -686,13 +1010,13 @@
       "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm3"
     },
     {
-      "id": "1e3ebf94e41ebe19",
-      "title": "Retell uses OpenAI models to help power 100M monthly calls",
-      "summary": "6M annual revenue run rate per employee.",
-      "publishedAt": "2026-10-27T15:00:00.000Z",
+      "id": "e960e8891f7d7ad8",
+      "title": "Genie 4: A new generation of world simulation",
+      "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+      "publishedAt": "2026-10-27T16:01:38.000Z",
       "category": "Models",
-      "sourceName": "OpenAI",
-      "sourceUrl": "https://openai.com/index/retell-ai"
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
     },
     {
       "id": "c417f8e3d39d0b89",
@@ -893,6 +1217,15 @@
       "sourceUrl": "https://openai.com/index/decisions-api"
     },
     {
+      "id": "8f93170faf71fda6",
+      "title": "Beyond tree cover: mapping the world’s forest types",
+      "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+      "publishedAt": "2026-10-22T14:30:24.000Z",
+      "category": "Updates",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/"
+    },
+    {
       "id": "6400feb681472530",
       "title": "What FDE means at OpenAI",
       "summary": "What forward deployed engineering means at OpenAI",
@@ -956,6 +1289,15 @@
       "sourceUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
     },
     {
+      "id": "856c26ca4c2d04bc",
+      "title": "Mistral Advances AI for Engineering with NVIDIA",
+      "summary": "Mistral is collaborating with NVIDIA to develop a new generation of AI-native engineering workflows powered by NVIDIA accelerated computing.",
+      "publishedAt": "2026-10-21T12:00:20.000Z",
+      "category": "Models",
+      "sourceName": "Mistral AI",
+      "sourceUrl": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/"
+    },
+    {
       "id": "95dedf578de78f3e",
       "title": "OpenAI models are coming to Google Cloud",
       "summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
@@ -1017,6 +1359,15 @@
       "category": "Updates",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/empowering-cyber-defenders"
+    },
+    {
+      "id": "4c6292fc5ecba5f2",
+      "title": "Voxtral 3",
+      "summary": "Voxtral 3: Mistral's voice agent SDK for real-time speech in 50+ languages, accurate transcription, emotional TTS, deep tool use.",
+      "publishedAt": "2026-10-20T12:00:22.000Z",
+      "category": "Models",
+      "sourceName": "Mistral AI",
+      "sourceUrl": "https://mistral.ai/news/voxtral-3/"
     },
     {
       "id": "1725d137aa3debc0",
@@ -1154,6 +1505,15 @@
       "sourceUrl": "https://openai.com/index/introducing-the-rosalind-academic-plan"
     },
     {
+      "id": "3b88e63140868036",
+      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+      "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
+      "publishedAt": "2026-10-15T16:08:03.000Z",
+      "category": "Updates",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/"
+    },
+    {
       "id": "a60f4a701f887ae8",
       "title": "Teaching students to think and learn through questions",
       "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.",
@@ -1161,6 +1521,15 @@
       "category": "Updates",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions"
+    },
+    {
+      "id": "370d8453b070a7bf",
+      "title": "Introducing Timestral",
+      "summary": "State-of-the-art probabilistic forecasting in four sizes (5M–209M params), CPU-efficient, zero-shot ready.",
+      "publishedAt": "2026-10-15T12:00:00.000Z",
+      "category": "Updates",
+      "sourceName": "Mistral AI",
+      "sourceUrl": "https://mistral.ai/news/timestral/"
     },
     {
       "id": "39052ad94a8a76cc",
@@ -1235,6 +1604,15 @@
       "sourceUrl": "https://openai.com/index/block-ai-powered-security"
     },
     {
+      "id": "b76b11a1199f73b7",
+      "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+      "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+      "publishedAt": "2026-10-14T02:00:14.000Z",
+      "category": "Models",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
+    },
+    {
       "id": "200a5d3dd39c6bfb",
       "title": "The EU’s next chapter in AI is agentic",
       "summary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
@@ -1244,6 +1622,15 @@
       "sourceUrl": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic"
     },
     {
+      "id": "1dc99b611b2499a3",
+      "title": "Developing Gemini 4 Argon responsibly and safely",
+      "summary": "",
+      "publishedAt": "2026-10-13T19:43:07.000Z",
+      "category": "Models",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/"
+    },
+    {
       "id": "53911f98c21c784f",
       "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
       "summary": "",
@@ -1251,6 +1638,24 @@
       "category": "Tools",
       "sourceName": "Hugging Face",
       "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b"
+    },
+    {
+      "id": "d96a2391b623b2cb",
+      "title": "Gemini 4 Argon for Robotics",
+      "summary": "",
+      "publishedAt": "2026-10-13T16:01:58.000Z",
+      "category": "Models",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/gemini-4-argon-for-robotics/"
+    },
+    {
+      "id": "4e31b829ae688591",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "summary": "",
+      "publishedAt": "2026-10-13T16:01:52.000Z",
+      "category": "Models",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-argon/"
     },
     {
       "id": "ed1be8ea5f53c737",
