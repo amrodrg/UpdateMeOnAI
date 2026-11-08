@@ -12,6 +12,15 @@ A creative, interactive page showing the newest AI tools, models, and updates. E
 - When the list is unfiltered, the newest story is a full-width lead with a larger serif headline. It spans the grid on sm and up.
 - Motion comes from Framer Motion: cards animate in and out as filters change. `MotionConfig reducedMotion="user"` in `components/NewsFeed.tsx` turns off JS animations for reduced-motion users, in addition to the CSS rule in `app/globals.css`.
 - Keyboard focus is shown with a visible cyan ring on tabs and controls.
+- The masthead has a double rule above it, like a printed newspaper.
+
+## Theme system
+- Colors come from CSS variables: `--white`, `--stone-100`, `--slate-50` to `--slate-950`, the cyan, violet, pink, emerald, and amber shades, and `--aurora-a/b/c` for the background glow. `tailwind.config.ts` maps each Tailwind name to its variable with `rgb(var(--name) / <alpha-value>)`, so `bg-white/5` and similar still work. Components do not change.
+- Light is the default (warm paper, `--slate-950` is paper; `--stone-100` and `--white` are ink). Dark is the midnight glass palette. Defaults are in `app/globals.css`.
+- With no saved choice, the OS `prefers-color-scheme` decides. `data-theme="light"` or `"dark"` on `<html>` overrides it.
+- `app/layout.tsx` runs an inline script before paint that reads `localStorage.theme` and sets `data-theme`, so the page does not flash.
+- `components/ThemeToggle.tsx` is a fixed glass segmented control (top right) with `aria-pressed` buttons. Its choice is stored in `localStorage` under `theme`.
+- Light-mode text colors are chosen to meet WCAG 1.4.3 contrast (4.5:1 for body text) on the paper background.
 
 ## Layout
 1. Left-aligned serif masthead with a tagline, and one meta line: "Updated … UTC · N stories from M sources".

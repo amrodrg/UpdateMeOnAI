@@ -2,13 +2,108 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Light is the default. Dark applies when the OS prefers it, unless the
+   reader picked light explicitly. data-theme on <html> overrides both. */
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+  --white: 15 23 42;
+  --stone-100: 15 23 42;
+  --slate-50: 255 255 255;
+  --slate-100: 30 41 59;
+  --slate-200: 45 55 72;
+  --slate-300: 55 65 81;
+  --slate-400: 71 85 105;
+  --slate-500: 82 96 115;
+  --slate-600: 100 116 139;
+  --slate-700: 148 163 184;
+  --slate-800: 203 213 225;
+  --slate-900: 226 232 240;
+  --slate-950: 250 247 240;
+  --cyan-300: 14 116 144;
+  --cyan-400: 14 116 144;
+  --violet-200: 91 33 182;
+  --violet-300: 109 40 217;
+  --violet-400: 124 58 237;
+  --pink-300: 190 24 93;
+  --pink-400: 219 39 119;
+  --emerald-300: 4 120 87;
+  --emerald-400: 5 150 105;
+  --amber-300: 180 83 9;
+  --aurora-a: rgba(14, 116, 144, 0.1);
+  --aurora-b: rgba(124, 58, 237, 0.1);
+  --aurora-c: rgba(190, 24, 93, 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --white: 255 255 255;
+    --stone-100: 245 245 244;
+    --slate-50: 248 250 252;
+    --slate-100: 241 245 249;
+    --slate-200: 226 232 240;
+    --slate-300: 203 213 225;
+    --slate-400: 148 163 184;
+    --slate-500: 100 116 139;
+    --slate-600: 71 85 105;
+    --slate-700: 51 65 85;
+    --slate-800: 30 41 59;
+    --slate-900: 15 23 42;
+    --slate-950: 2 6 23;
+    --cyan-300: 103 232 249;
+    --cyan-400: 34 211 238;
+    --violet-200: 221 214 254;
+    --violet-300: 196 181 253;
+    --violet-400: 167 139 250;
+    --pink-300: 249 168 212;
+    --pink-400: 244 114 182;
+    --emerald-300: 110 231 183;
+    --emerald-400: 52 211 153;
+    --amber-300: 252 211 77;
+    --aurora-a: rgba(34, 211, 238, 0.18);
+    --aurora-b: rgba(167, 139, 250, 0.2);
+    --aurora-c: rgba(244, 114, 182, 0.12);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --white: 255 255 255;
+  --stone-100: 245 245 244;
+  --slate-50: 248 250 252;
+  --slate-100: 241 245 249;
+  --slate-200: 226 232 240;
+  --slate-300: 203 213 225;
+  --slate-400: 148 163 184;
+  --slate-500: 100 116 139;
+  --slate-600: 71 85 105;
+  --slate-700: 51 65 85;
+  --slate-800: 30 41 59;
+  --slate-900: 15 23 42;
+  --slate-950: 2 6 23;
+  --cyan-300: 103 232 249;
+  --cyan-400: 34 211 238;
+  --violet-200: 221 214 254;
+  --violet-300: 196 181 253;
+  --violet-400: 167 139 250;
+  --pink-300: 249 168 212;
+  --pink-400: 244 114 182;
+  --emerald-300: 110 231 183;
+  --emerald-400: 52 211 153;
+  --amber-300: 252 211 77;
+  --aurora-a: rgba(34, 211, 238, 0.18);
+  --aurora-b: rgba(167, 139, 250, 0.2);
+  --aurora-c: rgba(244, 114, 182, 0.12);
+}
+
 @layer base {
   body {
     @apply min-h-screen bg-slate-950 text-slate-100 antialiased;
     background-image:
-      radial-gradient(circle at 15% 0%, rgba(34, 211, 238, 0.18), transparent 40%),
-      radial-gradient(circle at 85% 10%, rgba(167, 139, 250, 0.2), transparent 40%),
-      radial-gradient(circle at 50% 100%, rgba(244, 114, 182, 0.12), transparent 45%);
+      radial-gradient(circle at 15% 0%, var(--aurora-a), transparent 40%),
+      radial-gradient(circle at 85% 10%, var(--aurora-b), transparent 40%),
+      radial-gradient(circle at 50% 100%, var(--aurora-c), transparent 45%);
     background-attachment: fixed;
   }
 }
