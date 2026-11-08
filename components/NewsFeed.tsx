@@ -13,6 +13,12 @@ const BADGE_STYLES: Record<Category, string> = {
   Updates: "bg-pink-400/15 text-pink-300 ring-pink-400/40",
 };
 
+const ACCENT_RULES: Record<Category, string> = {
+  Tools: "border-t-cyan-400/70",
+  Models: "border-t-violet-400/70",
+  Updates: "border-t-pink-400/70",
+};
+
 const formatDate = (iso: string) =>
   new Date(iso).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
 
@@ -51,6 +57,9 @@ export default function NewsFeed({ items, generatedAt }: { items: NewsItem[]; ge
     );
   }, [items, category, query]);
 
+  // The newest story leads the page when the list is unfiltered.
+  const showLead = category === "All" && query.trim() === "" && visible.length > 1;
+
   const resetFilters = () => {
     setCategory("All");
     setQuery("");
@@ -72,7 +81,7 @@ export default function NewsFeed({ items, generatedAt }: { items: NewsItem[]; ge
                 onClick={() => setCategory(c)}
                 className={`rounded-full px-4 py-2 text-sm font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 ${
                   category === c
-                    ? "bg-gradient-to-r from-cyan-400 to-violet-400 text-slate-950 shadow-lg shadow-violet-500/20"
+                    ? "bg-stone-100 text-slate-950 shadow-lg shadow-black/30"
                     : "bg-white/5 text-slate-300 ring-1 ring-white/10 hover:bg-white/10"
                 }`}
               >
@@ -110,7 +119,9 @@ export default function NewsFeed({ items, generatedAt }: { items: NewsItem[]; ge
       ) : (
         <motion.ul layout className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence mode="popLayout">
-            {visible.map((item) => (
+            {visible.map((item, index) => {
+              const isLead = showLead && index === 0;
+              return (
               <motion.li
                 key={item.id}
                 layout
@@ -118,7 +129,9 @@ export default function NewsFeed({ items, generatedAt }: { items: NewsItem[]; ge
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.97 }}
                 transition={{ duration: 0.25 }}
-                className="group flex flex-col rounded-2xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur transition hover:-translate-y-1 hover:border-violet-400/40 hover:bg-white/[0.07] hover:shadow-xl hover:shadow-violet-500/10"
+                className={`group flex flex-col rounded-2xl border border-white/10 border-t-2 ${ACCENT_RULES[item.category]} bg-white/[0.04] p-6 backdrop-blur transition hover:-translate-y-1 hover:border-violet-400/40 hover:bg-white/[0.07] hover:shadow-xl hover:shadow-violet-500/10 ${
+                  isLead ? "sm:col-span-2 lg:col-span-3 sm:p-10" : ""
+                }`}
               >
                 <div className="mb-4 flex items-center justify-between gap-2">
                   <div className="flex items-center gap-2">
@@ -137,11 +150,21 @@ export default function NewsFeed({ items, generatedAt }: { items: NewsItem[]; ge
                     {formatDate(item.publishedAt)}
                   </time>
                 </div>
-                <h2 className="font-display text-2xl font-medium leading-tight text-white">
+                <h2
+                  className={`font-display font-medium leading-tight text-white ${
+                    isLead ? "max-w-3xl text-3xl sm:text-5xl" : "text-2xl"
+                  }`}
+                >
                   {item.title}
                 </h2>
                 {item.summary && (
-                  <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-300">{item.summary}</p>
+                  <p
+                    className={`mt-3 flex-1 leading-relaxed text-slate-300 ${
+                      isLead ? "max-w-2xl text-base sm:text-lg" : "text-sm"
+                    }`}
+                  >
+                    {item.summary}
+                  </p>
                 )}
                 <div className="mt-5 flex items-center justify-between border-t border-white/10 pt-4 text-sm">
                   <span className="text-slate-400">{item.sourceName}</span>
@@ -156,7 +179,8 @@ export default function NewsFeed({ items, generatedAt }: { items: NewsItem[]; ge
                   </a>
                 </div>
               </motion.li>
-            ))}
+              );
+            })}
           </AnimatePresence>
         </motion.ul>
       )}

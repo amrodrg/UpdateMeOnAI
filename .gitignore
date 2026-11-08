@@ -12,3 +12,4 @@ test-results/
 .agents/
 .claude/
 skills-lock.json
+.DS_Store
