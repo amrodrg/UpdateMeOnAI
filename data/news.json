@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-11-08T21:48:49.657Z",
+  "generatedAt": "2026-11-09T00:19:25.872Z",
   "items": [
+    {
+      "id": "f0be6325bfc4dec9",
+      "title": "Here’s the full text of Jensen Huang’s memo to Nvidia",
+      "summary": ", attends a media briefing following the company's \"Japan AI Ecosystem\" reception in Tokyo, Japan, on Thursday, July 16, 2026. Japan is planning to buy 27,500 next-generation Rubin chips from Nvidia Corp. to build a homegrown foundational AI model for robots.",
+      "publishedAt": "2026-11-08T22:54:50.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia"
+    },
     {
       "id": "eecad6fef1daea32",
       "title": "Why a new report on Anthropic automating AI development is alarming researchers",
