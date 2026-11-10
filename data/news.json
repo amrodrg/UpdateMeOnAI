@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-11-10T00:16:19.904Z",
+  "generatedAt": "2026-11-10T06:10:51.068Z",
   "items": [
+    {
+      "id": "19c160f4485a55c0",
+      "title": "Quoting Prompting Claude Fable 5.2",
+      "summary": "",
+      "publishedAt": "2026-11-10T05:34:14.000Z",
+      "category": "Models",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/"
+    },
     {
       "id": "1cd01b15863e291a",
       "title": "Locating the source of a mysterious beep with Claude",
