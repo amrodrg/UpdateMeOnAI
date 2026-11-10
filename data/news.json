@@ -1,6 +1,87 @@
 {
-  "generatedAt": "2026-11-09T12:11:10.085Z",
+  "generatedAt": "2026-11-10T00:16:19.904Z",
   "items": [
+    {
+      "id": "1cd01b15863e291a",
+      "title": "Locating the source of a mysterious beep with Claude",
+      "summary": "",
+      "publishedAt": "2026-11-09T23:57:21.000Z",
+      "category": "Models",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/"
+    },
+    {
+      "id": "a3bc8ca770f44f2d",
+      "title": "Anthropic releases new Mythos and Fable models amid RSI concerns",
+      "summary": "Anthropic says the new models \"show improvements in areas like coding, reasoning, and vision,\" as well as in communicating more clearly with users.",
+      "publishedAt": "2026-11-09T19:24:51.000Z",
+      "category": "Models",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/"
+    },
+    {
+      "id": "5ef93d9981a0db1c",
+      "title": "Apple’s $50 Intelligence Usage Packs extend access to some AI features",
+      "summary": "99, as spotted by 9to5Mac. \" These Intelligence Usage Packs, as Apple calls them, will allow users to continue accessing certain Apple Intelligence features that have usage limits because they rely on cloud-based AI models from OpenAI or Google Gemini. The Usage Packs can only be used … Read the…",
+      "publishedAt": "2026-11-09T19:09:58.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro"
+    },
+    {
+      "id": "ea9e227012293141",
+      "title": "Anthropic launches new Claude Fable and Mythos 5.2 models",
+      "summary": "2, which it says are designed to take on \"daunting\" technical challenges. 1 versions of the Fable and Mythos models. 2 is good at challenging software engineering problems, Anthropic says, and can orchestrate agent teams and tackle long-running projects.",
+      "publishedAt": "2026-11-09T19:00:00.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2"
+    },
+    {
+      "id": "e8884a0ba45abd76",
+      "title": "Meta releases Muse Ember, a new lightweight model for agent execution",
+      "summary": "At 10 cents per million input tokens, Ember is significantly cheaper than frontier competitors like Haiku and Luna.",
+      "publishedAt": "2026-11-09T18:00:00.000Z",
+      "category": "Models",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/"
+    },
+    {
+      "id": "a3eb4dc7ae89c15a",
+      "title": "Claude Fable 5.2 in GitHub Copilot",
+      "summary": "2, Anthropic’s newest Fable model, is now generally available in GitHub Copilot. You can use it for complex, multistep coding tasks across large codebases. 2 in GitHub Copilot appeared first on The GitHub Blog.",
+      "publishedAt": "2026-11-09T16:46:43.000Z",
+      "category": "Models",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-09-claude-fable-5-2-in-github-copilot"
+    },
+    {
+      "id": "a1d6a1e656f4ce84",
+      "title": "Disney and Adobe are building generative AI tools together",
+      "summary": "Who wants a hand-designed and creatively curated monorail anyway. | Image: Disney / Adobe The Walt Disney Company has teamed up with Adobe to develop proprietary \"artist-led\" generative AI models to support Disney's production pipeline. The multiyear partnership was announced today at Adobe's MAX…",
+      "publishedAt": "2026-11-09T15:38:56.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership"
+    },
+    {
+      "id": "952d2516af2e9054",
+      "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+      "summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+      "publishedAt": "2026-11-09T13:00:00.000Z",
+      "category": "Models",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/control-room"
+    },
+    {
+      "id": "02e9abf47eaf3fa0",
+      "title": "CodeRabbit scales agentic software development and ships 20x more",
+      "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
+      "publishedAt": "2026-11-09T08:00:00.000Z",
+      "category": "Models",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/coderabbit-codex-daybreak"
+    },
     {
       "id": "f0be6325bfc4dec9",
       "title": "Here’s the full text of Jensen Huang’s memo to Nvidia",
