@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-11-10T06:10:51.068Z",
+  "generatedAt": "2026-11-10T12:09:32.052Z",
   "items": [
+    {
+      "id": "cba41f0395d50b9e",
+      "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+      "summary": "",
+      "publishedAt": "2026-11-10T07:28:21.000Z",
+      "category": "Models",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/10/muse-ember/"
+    },
     {
       "id": "19c160f4485a55c0",
       "title": "Quoting Prompting Claude Fable 5.2",
