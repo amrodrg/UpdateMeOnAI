@@ -1,6 +1,24 @@
 {
-  "generatedAt": "2026-11-11T00:17:34.022Z",
+  "generatedAt": "2026-11-11T06:11:34.174Z",
   "items": [
+    {
+      "id": "19b4fcb1faac9c9b",
+      "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+      "summary": "",
+      "publishedAt": "2026-11-11T05:01:16.000Z",
+      "category": "Models",
+      "sourceName": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/qvac/botpsy"
+    },
+    {
+      "id": "b5d37a4739ec4800",
+      "title": "GitHub App support for Enterprise Copilot seat management",
+      "summary": "Enterprise GitHub Apps can now call the enterprise-level Copilot seat management APIs to control which users and enterprise teams are assigned Copilot seats. The Copilot seat management APIs are accessible… The post GitHub App support for Enterprise Copilot seat management appeared first on The…",
+      "publishedAt": "2026-11-11T00:10:31.000Z",
+      "category": "Copilot",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-10-github-app-support-for-enterprise-copilot-seat-management"
+    },
     {
       "id": "5bf610d1dd7d8e14",
       "title": "llm-gemini 0.36",
@@ -144,6 +162,15 @@
       "category": "Models",
       "sourceName": "Hugging Face",
       "sourceUrl": "https://huggingface.co/blog/decision"
+    },
+    {
+      "id": "37e4452e64c861cf",
+      "title": "Cogent and OpenAI build cyber defense factories for enterprises",
+      "summary": "Cogent combines OpenAI models with enterprise context to help automatically remediate vulnerabilities with agents.",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "category": "Models",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/cogent-security"
     },
     {
       "id": "1cd01b15863e291a",
