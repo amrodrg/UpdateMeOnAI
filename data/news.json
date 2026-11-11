@@ -1,6 +1,24 @@
 {
-  "generatedAt": "2026-11-11T12:10:28.771Z",
+  "generatedAt": "2026-11-11T18:07:34.529Z",
   "items": [
+    {
+      "id": "943bd9ebdd36c562",
+      "title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
+      "summary": "A graphic representing Google’s AlphaGenome Atlas. | Image: Google Researchers at Google DeepMind have unveiled a new AI model designed to unravel how changes in our DNA affect different cells, giving scientists a more detailed view of a notoriously difficult problem that could hold important…",
+      "publishedAt": "2026-11-11T15:00:00.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model"
+    },
+    {
+      "id": "87209848417b63cf",
+      "title": "Plurai wants to help AI agents work better using the same approach that helped get self-driving cars to roads",
+      "summary": "Like the end-to-end models trained to drive cars, AI agents are probabilistic systems operating in unpredictable environments.",
+      "publishedAt": "2026-11-11T14:00:00.000Z",
+      "category": "Models",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/"
+    },
     {
       "id": "19b4fcb1faac9c9b",
       "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
@@ -18,6 +36,15 @@
       "category": "Copilot",
       "sourceName": "GitHub Changelog",
       "sourceUrl": "https://github.blog/changelog/2026-11-10-github-app-support-for-enterprise-copilot-seat-management"
+    },
+    {
+      "id": "11568aa8dfcf9a3c",
+      "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+      "summary": "",
+      "publishedAt": "2026-11-11T00:00:00.000Z",
+      "category": "Models",
+      "sourceName": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/token-pooling"
     },
     {
       "id": "5bf610d1dd7d8e14",
