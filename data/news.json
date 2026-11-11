@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T06:11:34.174Z",
+  "generatedAt": "2026-11-11T12:10:28.771Z",
   "items": [
     {
       "id": "19b4fcb1faac9c9b",
@@ -135,6 +135,15 @@
       "category": "Models",
       "sourceName": "Google AI Blog",
       "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/"
+    },
+    {
+      "id": "9092d5eb66f29547",
+      "title": "Singapore Airlines elevates travel & work with OpenAI technology",
+      "summary": "Discover how Singapore Airlines uses OpenAI models and API to enhance customer support, travel discovery, and employee productivity, doubling CSAT for its Kris chatbot.",
+      "publishedAt": "2026-11-10T08:00:00.000Z",
+      "category": "Models",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/singapore-airlines-travel-work"
     },
     {
       "id": "cba41f0395d50b9e",
