@@ -1,6 +1,24 @@
 {
-  "generatedAt": "2026-11-11T18:07:34.529Z",
+  "generatedAt": "2026-11-12T00:17:52.987Z",
   "items": [
+    {
+      "id": "8cfe95d5a7efcad0",
+      "title": "Gemini Decisions API",
+      "summary": "",
+      "publishedAt": "2026-11-11T22:03:25.000Z",
+      "category": "Models",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/"
+    },
+    {
+      "id": "02bfed5e7aa817ea",
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "summary": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+      "publishedAt": "2026-11-11T18:00:00.000Z",
+      "category": "Models",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+    },
     {
       "id": "943bd9ebdd36c562",
       "title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
