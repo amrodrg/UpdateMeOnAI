@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T06:11:32.076Z",
+  "generatedAt": "2026-11-12T12:10:12.618Z",
   "items": [
     {
       "id": "8cfe95d5a7efcad0",
@@ -855,15 +855,6 @@
       "category": "Models",
       "sourceName": "Google AI Blog",
       "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
-    },
-    {
-      "id": "8d45898e533e591d",
-      "title": "Higgsfield takes AI video from 1 minute to over 10",
-      "summary": "5, and a path to voice filmmaking with GPT-Live.",
-      "publishedAt": "2026-10-13T12:00:00.000Z",
-      "category": "Models",
-      "sourceName": "OpenAI",
-      "sourceUrl": "https://openai.com/index/higgsfield-longer-videos-voice"
     }
   ]
 }
