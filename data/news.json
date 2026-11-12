@@ -1,6 +1,42 @@
 {
-  "generatedAt": "2026-11-12T12:10:12.618Z",
+  "generatedAt": "2026-11-12T18:08:30.449Z",
   "items": [
+    {
+      "id": "5b69826eead48a96",
+      "title": "Introducing Gemini 4 Hydrogen",
+      "summary": "",
+      "publishedAt": "2026-11-12T18:00:50.000Z",
+      "category": "Models",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/"
+    },
+    {
+      "id": "d6d23163b98ddfa1",
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "summary": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.",
+      "publishedAt": "2026-11-12T18:00:00.000Z",
+      "category": "Models",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/"
+    },
+    {
+      "id": "64a6f20ebcc4dac1",
+      "title": "AI chatbots are recommending fake retail websites, study finds",
+      "summary": "Shoppers using AI chatbots to research products or find places to buy items could be directed to imposters and other risky websites, a new study found. The study conducted by IP protection firm Podqi and shared exclusively with The Verge prompted ChatGPT, Gemini, and Perplexity with a handful of…",
+      "publishedAt": "2026-11-12T17:00:00.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations"
+    },
+    {
+      "id": "cbda9238a3684b28",
+      "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
+      "summary": "",
+      "publishedAt": "2026-11-12T00:00:00.000Z",
+      "category": "Models",
+      "sourceName": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/3d-lora-finetuning"
+    },
     {
       "id": "8cfe95d5a7efcad0",
       "title": "Gemini Decisions API",
@@ -828,33 +864,6 @@
       "category": "Models",
       "sourceName": "Google DeepMind",
       "sourceUrl": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/"
-    },
-    {
-      "id": "d96a2391b623b2cb",
-      "title": "Gemini 4 Argon for Robotics",
-      "summary": "",
-      "publishedAt": "2026-10-13T16:01:58.000Z",
-      "category": "Models",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/gemini-4-argon-for-robotics/"
-    },
-    {
-      "id": "4e31b829ae688591",
-      "title": "Gemini 4 Argon: Built to solve your hardest problems",
-      "summary": "",
-      "publishedAt": "2026-10-13T16:01:52.000Z",
-      "category": "Models",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-argon/"
-    },
-    {
-      "id": "ed1be8ea5f53c737",
-      "title": "Gemini 4 Argon: Built to solve your hardest problems",
-      "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model.",
-      "publishedAt": "2026-10-13T16:00:00.000Z",
-      "category": "Models",
-      "sourceName": "Google AI Blog",
-      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
     }
   ]
 }
