@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-11-13T00:17:42.020Z",
+  "generatedAt": "2026-11-13T06:11:21.558Z",
   "items": [
+    {
+      "id": "aeee01f562824dca",
+      "title": "llm-gemini 0.37",
+      "summary": "",
+      "publishedAt": "2026-11-12T22:55:19.000Z",
+      "category": "Models",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/12/llm-gemini/"
+    },
     {
       "id": "a3e1afb4a33deb1b",
       "title": "Google’s new Gemini model is better at understanding complicated questions",
@@ -891,15 +900,6 @@
       "category": "Models",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/amp-beyond-coding"
-    },
-    {
-      "id": "b76b11a1199f73b7",
-      "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
-      "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
-      "publishedAt": "2026-10-14T02:00:14.000Z",
-      "category": "Models",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
     }
   ]
 }
