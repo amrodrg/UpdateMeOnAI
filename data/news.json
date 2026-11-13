@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T06:11:21.558Z",
+  "generatedAt": "2026-11-13T12:10:08.501Z",
   "items": [
     {
       "id": "aeee01f562824dca",
@@ -270,6 +270,15 @@
       "category": "Models",
       "sourceName": "Google AI Blog",
       "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/"
+    },
+    {
+      "id": "1972a6107d7cc016",
+      "title": "Opening the datasets behind our AI weather models",
+      "summary": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
+      "publishedAt": "2026-11-10T11:13:04.000Z",
+      "category": "Models",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/"
     },
     {
       "id": "9092d5eb66f29547",
@@ -891,15 +900,6 @@
       "category": "Models",
       "sourceName": "Hugging Face",
       "sourceUrl": "https://huggingface.co/blog/meta-muse-spark-open"
-    },
-    {
-      "id": "57c3309db5bedcde",
-      "title": "Amp puts AI agents to work beyond code with OpenAI models",
-      "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
-      "publishedAt": "2026-10-14T12:00:00.000Z",
-      "category": "Models",
-      "sourceName": "OpenAI",
-      "sourceUrl": "https://openai.com/index/amp-beyond-coding"
     }
   ]
 }
