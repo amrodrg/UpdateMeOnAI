@@ -1,6 +1,24 @@
 {
-  "generatedAt": "2026-11-13T12:10:08.501Z",
+  "generatedAt": "2026-11-13T18:08:04.761Z",
   "items": [
+    {
+      "id": "6841e619fcd7e8d9",
+      "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+      "summary": "",
+      "publishedAt": "2026-11-13T14:05:22.000Z",
+      "category": "Models",
+      "sourceName": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+    },
+    {
+      "id": "0acc674430dfd202",
+      "title": "Claude’s Duet agent is a little neurotic and surprisingly helpful",
+      "summary": "Let’s get to work. | Photo: Allison Johnson / The Verge Normally, the products I test don't offer to help me write up my experience with them. Duet is different.",
+      "publishedAt": "2026-11-13T14:00:00.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on"
+    },
     {
       "id": "aeee01f562824dca",
       "title": "llm-gemini 0.37",
