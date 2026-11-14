@@ -1,6 +1,51 @@
 {
-  "generatedAt": "2026-11-13T18:08:04.761Z",
+  "generatedAt": "2026-11-14T00:17:28.344Z",
   "items": [
+    {
+      "id": "995c4a805a2dae47",
+      "title": "Upcoming deprecation of selected GitHub Copilot models in December",
+      "summary": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on December 14, 2026: Model Deprecation date… The post Upcoming deprecation of selected GitHub Copilot models in December appeared first on…",
+      "publishedAt": "2026-11-13T20:40:05.000Z",
+      "category": "Models",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december"
+    },
+    {
+      "id": "49f0b0840b1ef26a",
+      "title": "AI agent startup LangChain hits $3B valuation",
+      "summary": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
+      "publishedAt": "2026-11-13T19:37:57.000Z",
+      "category": "Models",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/"
+    },
+    {
+      "id": "a5cbeaaf0b4df56f",
+      "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
+      "summary": "New research shows the most advanced AI models from China were trained on banned Nvidia chips.",
+      "publishedAt": "2026-11-13T18:40:30.000Z",
+      "category": "Models",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"
+    },
+    {
+      "id": "a82a582d254d179c",
+      "title": "GitHub Enterprise Server support in the GitHub Copilot app",
+      "summary": "You can now bring your work on GitHub Enterprise Server (GHES) into the GitHub Copilot app. Add your GHES account to work with remote repositories, issues, and pull requests. This… The post GitHub Enterprise Server support in the GitHub Copilot app appeared first on The GitHub Blog.",
+      "publishedAt": "2026-11-13T18:27:13.000Z",
+      "category": "Copilot",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app"
+    },
+    {
+      "id": "dde13a6350f0c89d",
+      "title": "Gemini 4 Hydrogen in GitHub Copilot",
+      "summary": "Gemini 4 Hydrogen, Google’s latest Flash model, is now generally available in GitHub Copilot. It is designed for fast, efficient agentic coding, tool use, and multistep workflows, with improved instruction… The post Gemini 4 Hydrogen in GitHub Copilot appeared first on The GitHub Blog.",
+      "publishedAt": "2026-11-13T18:23:48.000Z",
+      "category": "Models",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot"
+    },
     {
       "id": "6841e619fcd7e8d9",
       "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
@@ -909,15 +954,6 @@
       "category": "Models",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/introducing-the-rosalind-academic-plan"
-    },
-    {
-      "id": "ff0cf28c5d753057",
-      "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
-      "summary": "",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "category": "Models",
-      "sourceName": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/meta-muse-spark-open"
     }
   ]
 }
