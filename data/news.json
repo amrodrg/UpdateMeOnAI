@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T18:07:49.915Z",
+  "generatedAt": "2026-11-15T00:19:17.988Z",
   "items": [
     {
       "id": "995c4a805a2dae47",
@@ -936,24 +936,6 @@
       "category": "Models",
       "sourceName": "Hugging Face",
       "sourceUrl": "https://huggingface.co/blog/hf-torchneuron"
-    },
-    {
-      "id": "c9a6184923cc1a58",
-      "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
-      "summary": "",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "category": "Models",
-      "sourceName": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/reflection-beam"
-    },
-    {
-      "id": "32165ee6af8945a5",
-      "title": "Bringing GPT-Rosalind to academic research labs",
-      "summary": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
-      "publishedAt": "2026-10-15T19:00:00.000Z",
-      "category": "Models",
-      "sourceName": "OpenAI",
-      "sourceUrl": "https://openai.com/index/introducing-the-rosalind-academic-plan"
     }
   ]
 }
