@@ -1,6 +1,51 @@
 {
-  "generatedAt": "2026-11-16T12:14:04.330Z",
+  "generatedAt": "2026-11-16T18:08:37.572Z",
   "items": [
+    {
+      "id": "af037def51a6f595",
+      "title": "OpenAI will embed Apollo researchers to investigate AI subversion",
+      "summary": "OpenAI will embed six Apollo Research evaluators to investigate whether its AI models engage in subversive behavior, but restrictions on access and disclosure raise questions about their independence.",
+      "publishedAt": "2026-11-16T17:02:43.000Z",
+      "category": "Models",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/"
+    },
+    {
+      "id": "2d7a5d6b20fff3cd",
+      "title": "Broadening access to AI for scientists",
+      "summary": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
+      "publishedAt": "2026-11-16T17:00:00.000Z",
+      "category": "Models",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/expanding-chatgpt-for-academic-researchers"
+    },
+    {
+      "id": "2fdf48c7e9e85e8a",
+      "title": "Google Maps can now create trip itineraries for you",
+      "summary": "Google is launching a new AI trip-planning feature for Maps that allows the app to create custom itineraries for you and provide real-time details about each stop. The update, which is rolling out to the Gemini-powered Ask Maps chatbot inside the app, lets you plan a one-day outing or a trip…",
+      "publishedAt": "2026-11-16T14:00:00.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning"
+    },
+    {
+      "id": "9fe6d2ae73e55f52",
+      "title": "Our first phase of embedded assessments",
+      "summary": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.",
+      "publishedAt": "2026-11-16T08:00:00.000Z",
+      "category": "Models",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/our-first-phase-of-embedded-assessments"
+    },
+    {
+      "id": "8ec21efa2c622734",
+      "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+      "summary": "",
+      "publishedAt": "2026-11-16T00:00:00.000Z",
+      "category": "Models",
+      "sourceName": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/openrouter"
+    },
     {
       "id": "2e8f421d2ee2a3df",
       "title": "A step toward defining the Standard Model on a lattice",
