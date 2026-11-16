@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-11-15T18:07:51.275Z",
+  "generatedAt": "2026-11-16T00:21:47.542Z",
   "items": [
+    {
+      "id": "2e8f421d2ee2a3df",
+      "title": "A step toward defining the Standard Model on a lattice",
+      "summary": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+      "publishedAt": "2026-11-15T22:00:01.000Z",
+      "category": "Models",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/step-toward-defining-the-standard-model"
+    },
     {
       "id": "995c4a805a2dae47",
       "title": "Upcoming deprecation of selected GitHub Copilot models in December",
