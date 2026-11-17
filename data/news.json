@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T00:17:23.106Z",
+  "generatedAt": "2026-11-17T06:11:26.654Z",
   "items": [
     {
       "id": "fd96ccdd509bd958",
@@ -18,6 +18,24 @@
       "category": "Models",
       "sourceName": "GitHub Changelog",
       "sourceUrl": "https://github.blog/changelog/2026-11-16-github-copilot-models-deprecated-on-november-16-2026"
+    },
+    {
+      "id": "a06076806a0e698d",
+      "title": "Control where GitHub Copilot customizations come from",
+      "summary": "As an enterprise administrator, you can now require selected GitHub Copilot customizations to come from plugins or managed settings, rather than standalone user or project configuration. Combined with marketplace restrictions,… The post Control where GitHub Copilot customizations come from…",
+      "publishedAt": "2026-11-16T19:48:33.000Z",
+      "category": "Copilot",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from"
+    },
+    {
+      "id": "c04e20070f0fc9a3",
+      "title": "VS Code retires the Local harness in February 2027",
+      "summary": "146 deprecates the Local harness, the older software that coordinates the model, context, and tools for GitHub Copilot agent sessions in the editor. The Local harness will… The post VS Code retires the Local harness in February 2027 appeared first on The GitHub Blog.",
+      "publishedAt": "2026-11-16T19:22:56.000Z",
+      "category": "Models",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-16-vs-code-retires-the-local-harness-in-february-2027"
     },
     {
       "id": "af037def51a6f595",
