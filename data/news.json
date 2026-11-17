@@ -1,9 +1,27 @@
 {
-  "generatedAt": "2026-11-16T18:08:37.572Z",
+  "generatedAt": "2026-11-17T00:17:23.106Z",
   "items": [
     {
+      "id": "fd96ccdd509bd958",
+      "title": "GitHub Copilot weekly releases — November 9",
+      "summary": "This week, bring GitHub Enterprise Server repositories into the Copilot app and see which agent sessions need you first in VS Code. You can also try two new models, Claude… The post GitHub Copilot weekly releases — November 9 appeared first on The GitHub Blog.",
+      "publishedAt": "2026-11-16T21:34:53.000Z",
+      "category": "Models",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9"
+    },
+    {
+      "id": "ff1caf51baeac277",
+      "title": "GitHub Copilot models deprecated on November 16, 2026",
+      "summary": "As of today, November 16, 2026, we have deprecated the following models across most GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Note… The post GitHub Copilot models deprecated on November 16, 2026 appeared first on The GitHub Blog.",
+      "publishedAt": "2026-11-16T20:25:20.000Z",
+      "category": "Models",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-16-github-copilot-models-deprecated-on-november-16-2026"
+    },
+    {
       "id": "af037def51a6f595",
-      "title": "OpenAI will embed Apollo researchers to investigate AI subversion",
+      "title": "OpenAI will embed safety researchers to investigate AI subversion",
       "summary": "OpenAI will embed six Apollo Research evaluators to investigate whether its AI models engage in subversive behavior, but restrictions on access and disclosure raise questions about their independence.",
       "publishedAt": "2026-11-16T17:02:43.000Z",
       "category": "Models",
