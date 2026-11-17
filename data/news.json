@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T06:11:26.654Z",
+  "generatedAt": "2026-11-17T12:10:21.155Z",
   "items": [
     {
       "id": "fd96ccdd509bd958",
@@ -63,6 +63,15 @@
       "category": "Models",
       "sourceName": "The Verge AI",
       "sourceUrl": "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning"
+    },
+    {
+      "id": "b82b64ef90f76e66",
+      "title": "How Revolut raises ambition without lowering the bar",
+      "summary": "Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.",
+      "publishedAt": "2026-11-16T09:30:00.000Z",
+      "category": "Models",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/business/customer-stories/revolut"
     },
     {
       "id": "9fe6d2ae73e55f52",
