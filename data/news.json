@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-11-17T12:10:21.155Z",
+  "generatedAt": "2026-11-17T18:08:46.930Z",
   "items": [
+    {
+      "id": "830da74434e8505c",
+      "title": "Put Gemini to work for you",
+      "summary": "S. and deeper Google Workspace integration to get things done on your behalf.",
+      "publishedAt": "2026-11-17T17:00:00.000Z",
+      "category": "Models",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
+    },
     {
       "id": "fd96ccdd509bd958",
       "title": "GitHub Copilot weekly releases — November 9",
