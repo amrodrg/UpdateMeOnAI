@@ -1,6 +1,123 @@
 {
-  "generatedAt": "2026-11-17T18:08:46.930Z",
+  "generatedAt": "2026-11-18T00:17:23.237Z",
   "items": [
+    {
+      "id": "82b169450b02e27d",
+      "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+      "summary": "",
+      "publishedAt": "2026-11-17T22:38:52.000Z",
+      "category": "Models",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/"
+    },
+    {
+      "id": "57e7781a892d4960",
+      "title": "OpenAI’s GPT-6.2 Astra and GPT-6.2 Sol now available",
+      "summary": "2 Sol are now generally available in GitHub Copilot. 2 Sol now available appeared first on The GitHub Blog.",
+      "publishedAt": "2026-11-17T20:20:29.000Z",
+      "category": "Models",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available"
+    },
+    {
+      "id": "20774146b79ca781",
+      "title": "Google’s Spark AI agent becomes ‘Tasks’ — and now it’s free",
+      "summary": "” | Image: Google Google is rebranding its Spark AI agent as \"Tasks\" and making it free to use. The feature, which is powered by Google's new Gemini 4 Hydrogen AI model, can do things like create meal plans, manage your calendar, and dig through your emails to find recurring expenses you might not…",
+      "publishedAt": "2026-11-17T18:58:01.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free"
+    },
+    {
+      "id": "75073ab854943bd9",
+      "title": "GitHub Copilot Fusion updates: more availability, benchmarks, and models",
+      "summary": "Today, we’re expanding GitHub Copilot Fusion with new models, available on more Copilot surfaces, and results on two public Terminal-Bench leaderboards, giving you more ways to use Fusion and compare… The post GitHub Copilot Fusion updates: more availability, benchmarks, and models appeared first…",
+      "publishedAt": "2026-11-17T18:04:48.000Z",
+      "category": "Models",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-fusion-updates-more-availability-benchmarks-and-models"
+    },
+    {
+      "id": "c381f1f20c433e7d",
+      "title": "GitHub Copilot app, Microsoft Ignite releases",
+      "summary": "Copilot is most useful when it can work where you do. The GitHub Copilot app now supports your Azure DevOps repositories, your GitHub Enterprise Server instance, and the browser you’re… The post GitHub Copilot app, Microsoft Ignite releases appeared first on The GitHub Blog.",
+      "publishedAt": "2026-11-17T18:03:42.000Z",
+      "category": "Copilot",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases"
+    },
+    {
+      "id": "6beb5088ff95eeea",
+      "title": "Copilot code review: Adaptive effort, secret detection, and more",
+      "summary": "GitHub Copilot code review now helps you catch more issues earlier, with less effort. Adaptive matches review depth to each pull request, so routine changes get a quick pass and… The post Copilot code review: Adaptive effort, secret detection, and more appeared first on The GitHub Blog.",
+      "publishedAt": "2026-11-17T18:02:05.000Z",
+      "category": "Copilot",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-17-copilot-code-review-adaptive-effort-secret-detection-and-more"
+    },
+    {
+      "id": "467e19c06d56952c",
+      "title": "MAI Code 2 and MAI Code 2 Flash in GitHub Copilot",
+      "summary": "The next generation of Microsoft AI (MAI) coding models has arrived in GitHub Copilot. Introducing MAI Code 2 and MAI Code 2 Flash, two new models that represent a major… The post MAI Code 2 and MAI Code 2 Flash in GitHub Copilot appeared first on The GitHub Blog.",
+      "publishedAt": "2026-11-17T18:01:45.000Z",
+      "category": "Models",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-17-mai-code-2-and-mai-code-2-flash-in-github-copilot"
+    },
+    {
+      "id": "453bf04922152159",
+      "title": "GitHub Copilot in JetBrains, Ignite releases",
+      "summary": "This update brings remote access, on-device voice dictation, and browser use controls to GitHub Copilot for JetBrains. Copilot users in JetBrains IDEs also get context usage shortcuts, historical diffs, simpler… The post GitHub Copilot in JetBrains, Ignite releases appeared first on The GitHub Blog.",
+      "publishedAt": "2026-11-17T18:00:59.000Z",
+      "category": "Copilot",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-in-jetbrains-ignite-releases"
+    },
+    {
+      "id": "4cc1e304d76813ff",
+      "title": "Monitor GitHub Copilot activity through Microsoft Agent 365",
+      "summary": "Enterprises can now stream GitHub Copilot agent activity directly into Microsoft Agent 365. This lets you bring audit data from across GitHub Copilot clients into Microsoft’s agent control plane, where… The post Monitor GitHub Copilot activity through Microsoft Agent 365 appeared first on The…",
+      "publishedAt": "2026-11-17T18:00:59.000Z",
+      "category": "Copilot",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-17-monitor-github-copilot-activity-through-microsoft-agent-365"
+    },
+    {
+      "id": "8420186bd2fe274e",
+      "title": "GitHub Copilot CLI adds Microsoft Entra sign-in as a preview",
+      "summary": "GitHub Copilot CLI now supports Microsoft Entra authentication in public preview. You can sign in with your Microsoft Entra account to silently authenticate to a linked GitHub Enterprise Managed User… The post GitHub Copilot CLI adds Microsoft Entra sign-in as a preview appeared first on The…",
+      "publishedAt": "2026-11-17T18:00:35.000Z",
+      "category": "Copilot",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview"
+    },
+    {
+      "id": "7be142154dd5bd1a",
+      "title": "Track Copilot code review outcomes in Repository insights",
+      "summary": "You can now see how Copilot code review feedback lands in each repository. A new “Repository insights” page, the first item in a repository’s Insights tab, brings Copilot code review… The post Track Copilot code review outcomes in Repository insights appeared first on The GitHub Blog.",
+      "publishedAt": "2026-11-17T18:00:35.000Z",
+      "category": "Copilot",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights"
+    },
+    {
+      "id": "1811a0441af94992",
+      "title": "GitHub Copilot Evals is now in public preview",
+      "summary": "You can now use GitHub Copilot Evals to optimize GitHub Copilot for yourself. … The post GitHub Copilot Evals is now in public preview appeared first on The GitHub Blog.",
+      "publishedAt": "2026-11-17T18:00:33.000Z",
+      "category": "Copilot",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview"
+    },
+    {
+      "id": "8f6af8c44a4a1bfb",
+      "title": "Introducing GPT-6.2 Astra and Sol",
+      "summary": "2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+      "publishedAt": "2026-11-17T17:45:00.000Z",
+      "category": "Models",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+    },
     {
       "id": "830da74434e8505c",
       "title": "Put Gemini to work for you",
@@ -1035,15 +1152,6 @@
       "category": "Models",
       "sourceName": "Hugging Face",
       "sourceUrl": "https://huggingface.co/blog/anylanguagemodel-1-0"
-    },
-    {
-      "id": "5c52b7d34becd1cc",
-      "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
-      "summary": "",
-      "publishedAt": "2026-10-19T00:00:00.000Z",
-      "category": "Models",
-      "sourceName": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/hf-torchneuron"
     }
   ]
 }
