@@ -1,6 +1,51 @@
 {
-  "generatedAt": "2026-11-18T12:10:11.833Z",
+  "generatedAt": "2026-11-18T18:08:06.364Z",
   "items": [
+    {
+      "id": "0191a8cf5007a7e3",
+      "title": "The Gemini app is now available on lower-memory Android devices.",
+      "summary": "The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today.",
+      "publishedAt": "2026-11-18T17:00:00.000Z",
+      "category": "Models",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/"
+    },
+    {
+      "id": "4270e297502a029b",
+      "title": "Remember the frontier AI pause? Chip companies don’t either",
+      "summary": "” | Image: Nvidia This summer, OpenAI paused its largest planned frontier training run after its AI agents accidentally hacked Hugging Face and early evidence suggested that its next model could independently find and exploit security flaws. In September, Anthropic CEO Dario Amodei called for…",
+      "publishedAt": "2026-11-18T15:44:02.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1036549/nvidia-amd-earnings-fall-2026-chips-pause-frontier-models"
+    },
+    {
+      "id": "aef632472a5e3af7",
+      "title": "Time-Series Models in the Streamhouse: A New Frontier and Use Cases",
+      "summary": "",
+      "publishedAt": "2026-11-18T15:00:23.000Z",
+      "category": "Models",
+      "sourceName": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse"
+    },
+    {
+      "id": "68ddb817fe4001c0",
+      "title": "Advancing chip design with OpenAI models",
+      "summary": "OpenAI models optimized circuits used in Jalapeño silicon and improved RISC‑V core designs, showing progress in AI-assisted chip design with GPT‑6 Astra.",
+      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "category": "Models",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models"
+    },
+    {
+      "id": "5b89a2db7f60ae90",
+      "title": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
+      "summary": "",
+      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "category": "Models",
+      "sourceName": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/rumble-2-flash"
+    },
     {
       "id": "82b169450b02e27d",
       "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
