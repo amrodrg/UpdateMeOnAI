@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-11-19T06:11:33.400Z",
+  "generatedAt": "2026-11-19T18:08:49.558Z",
   "items": [
+    {
+      "id": "8c4432adfe17d06c",
+      "title": "llm-gemini 0.38",
+      "summary": "",
+      "publishedAt": "2026-11-18T23:59:20.000Z",
+      "category": "Models",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/18/llm-gemini/"
+    },
     {
       "id": "d8ba4398191c3d46",
       "title": "The nation’s largest school districts consider ditching Google Search",
@@ -1215,33 +1224,6 @@
       "category": "Models",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/openai-models-google-cloud"
-    },
-    {
-      "id": "c59142aad3a717b8",
-      "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
-      "summary": "Three Java Champions share how they use GitHub Copilot to solve problems, accelerate development, and keep humans responsible for the results. The post How 3 Java Champions are using GitHub Copilot for increased productivity appeared first on The GitHub Blog.",
-      "publishedAt": "2026-10-20T16:05:03.000Z",
-      "category": "Copilot",
-      "sourceName": "GitHub Blog",
-      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/"
-    },
-    {
-      "id": "4c6292fc5ecba5f2",
-      "title": "Voxtral 3",
-      "summary": "Voxtral 3: Mistral's voice agent SDK for real-time speech in 50+ languages, accurate transcription, emotional TTS, deep tool use.",
-      "publishedAt": "2026-10-20T12:00:22.000Z",
-      "category": "Models",
-      "sourceName": "Mistral AI",
-      "sourceUrl": "https://mistral.ai/news/voxtral-3/"
-    },
-    {
-      "id": "aa8847d44cbae332",
-      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
-      "summary": "1 Sol.",
-      "publishedAt": "2026-10-20T07:00:00.000Z",
-      "category": "Models",
-      "sourceName": "OpenAI",
-      "sourceUrl": "https://openai.com/index/terminal-x"
     }
   ]
 }
