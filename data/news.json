@@ -1,6 +1,42 @@
 {
-  "generatedAt": "2026-11-18T18:08:06.364Z",
+  "generatedAt": "2026-11-19T00:17:44.760Z",
   "items": [
+    {
+      "id": "d8ba4398191c3d46",
+      "title": "The nation’s largest school districts consider ditching Google Search",
+      "summary": "New York, Los Angeles, and Chicago schools are considering Google alternatives after the company said it will disable Search for schools that opt out of its AI features, according to The New York Times. Starting next year, schools will not have the option to disable Gemini-powered features without…",
+      "publishedAt": "2026-11-18T23:18:35.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google"
+    },
+    {
+      "id": "8e2ce054ff040c2d",
+      "title": "Connect Supabase, Box, Calendly, and more to Copilot",
+      "summary": "You can now connect eight more services to Copilot using GitHub-verified MCP servers, or connectors, available in public preview. New services you can connect Box: Search and manage content, and… The post Connect Supabase, Box, Calendly, and more to Copilot appeared first on The GitHub Blog.",
+      "publishedAt": "2026-11-18T22:04:50.000Z",
+      "category": "Copilot",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-18-connect-supabase-box-calendly-and-more-to-copilot"
+    },
+    {
+      "id": "362ee7bc4f192047",
+      "title": "Gemini 4 Neon in GitHub Copilot",
+      "summary": "Gemini 4 Neon is now generally available in GitHub Copilot. It is designed for agentic coding, multistep tool use, and knowledge work. According to Google, Gemini 4 Neon delivers quality… The post Gemini 4 Neon in GitHub Copilot appeared first on The GitHub Blog.",
+      "publishedAt": "2026-11-18T21:49:21.000Z",
+      "category": "Models",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-18-gemini-4-neon-in-github-copilot"
+    },
+    {
+      "id": "fd9bebbff7e69286",
+      "title": "Introducing Gemini 4 Neon",
+      "summary": "",
+      "publishedAt": "2026-11-18T21:35:43.000Z",
+      "category": "Models",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-neon/"
+    },
     {
       "id": "0191a8cf5007a7e3",
       "title": "The Gemini app is now available on lower-memory Android devices.",
@@ -9,6 +45,15 @@
       "category": "Models",
       "sourceName": "Google AI Blog",
       "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/"
+    },
+    {
+      "id": "6e93a4cc09914f56",
+      "title": "Customize GitHub Copilot for your team",
+      "summary": "You can now share the GitHub Copilot plugins your team relies on without asking every member to repeat the same setup. Team customizations are generally available for organization teams. Team… The post Customize GitHub Copilot for your team appeared first on The GitHub Blog.",
+      "publishedAt": "2026-11-18T16:00:13.000Z",
+      "category": "Copilot",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-18-customize-github-copilot-for-your-team"
     },
     {
       "id": "4270e297502a029b",
@@ -27,6 +72,15 @@
       "category": "Models",
       "sourceName": "Hugging Face",
       "sourceUrl": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse"
+    },
+    {
+      "id": "99be0c0a7e074380",
+      "title": "Managing frontier AI risk: From training to deployment",
+      "summary": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
+      "publishedAt": "2026-11-18T06:00:00.000Z",
+      "category": "Models",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/managing-frontier-ai-risk"
     },
     {
       "id": "68ddb817fe4001c0",
@@ -1188,15 +1242,6 @@
       "category": "Models",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/terminal-x"
-    },
-    {
-      "id": "41fb25a47d12d204",
-      "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
-      "summary": "",
-      "publishedAt": "2026-10-20T00:00:00.000Z",
-      "category": "Models",
-      "sourceName": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/anylanguagemodel-1-0"
     }
   ]
 }
