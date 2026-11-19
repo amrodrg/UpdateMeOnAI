@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T00:17:44.760Z",
+  "generatedAt": "2026-11-19T06:11:33.400Z",
   "items": [
     {
       "id": "d8ba4398191c3d46",
@@ -13,7 +13,7 @@
     {
       "id": "8e2ce054ff040c2d",
       "title": "Connect Supabase, Box, Calendly, and more to Copilot",
-      "summary": "You can now connect eight more services to Copilot using GitHub-verified MCP servers, or connectors, available in public preview. New services you can connect Box: Search and manage content, and… The post Connect Supabase, Box, Calendly, and more to Copilot appeared first on The GitHub Blog.",
+      "summary": "You can now connect eight more services to Copilot using GitHub-verified MCP servers, or connectors, available in public preview. They join more than 25 services you can already connect, like… The post Connect Supabase, Box, Calendly, and more to Copilot appeared first on The GitHub Blog.",
       "publishedAt": "2026-11-18T22:04:50.000Z",
       "category": "Copilot",
       "sourceName": "GitHub Changelog",
