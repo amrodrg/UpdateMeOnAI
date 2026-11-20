@@ -1,6 +1,24 @@
 {
-  "generatedAt": "2026-11-19T18:08:49.558Z",
+  "generatedAt": "2026-11-20T06:11:31.648Z",
   "items": [
+    {
+      "id": "534016fa5cae6870",
+      "title": "Gemini on Mac can now use your computer",
+      "summary": "Google's Gemini app for macOS now has computer use, meaning it can help you \"get multi-step tasks done across your local files, desktop apps, and the web,\" the company says. Google suggests the feature might be useful for things like speeding up workflows, filling in forms, making presentations,…",
+      "publishedAt": "2026-11-19T18:21:13.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use"
+    },
+    {
+      "id": "056cf0b58a3dbace",
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "summary": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
+      "publishedAt": "2026-11-19T18:00:00.000Z",
+      "category": "Models",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+    },
     {
       "id": "8c4432adfe17d06c",
       "title": "llm-gemini 0.38",
