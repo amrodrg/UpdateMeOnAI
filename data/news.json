@@ -1,6 +1,33 @@
 {
-  "generatedAt": "2026-11-20T12:09:59.099Z",
+  "generatedAt": "2026-11-20T18:08:32.705Z",
   "items": [
+    {
+      "id": "675650dffca0c9d4",
+      "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+      "summary": "Anthropic went public on November 19th, 2026. | Photo: Getty Images Anthropic mathematician Levent Alpöge claims he has proved the Riemann hypothesis, one of mathematics's most notoriously difficult problems, with the help of Claude, cracking a puzzle that has eluded some of the world's best…",
+      "publishedAt": "2026-11-20T16:34:13.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem"
+    },
+    {
+      "id": "af7d30f58230f923",
+      "title": "Signal is blocking Gemini and Siri AI from reading your screen",
+      "summary": "Signal users on iOS will see this option to toggle blocking screenshots and preventing Siri AI from scanning on-screen content. | Image: Signal Signal is restricting the ability to take screenshots on Android and iOS devices in an effort to prevent AI agents from reading users' messages and other…",
+      "publishedAt": "2026-11-20T12:30:47.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app"
+    },
+    {
+      "id": "701a571706ec6c00",
+      "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+      "summary": "",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "category": "Models",
+      "sourceName": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/harness-adapters-at-scale"
+    },
     {
       "id": "534016fa5cae6870",
       "title": "Gemini on Mac can now use your computer",
