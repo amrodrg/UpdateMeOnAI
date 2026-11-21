@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T18:08:32.705Z",
+  "generatedAt": "2026-11-21T00:17:39.061Z",
   "items": [
     {
       "id": "675650dffca0c9d4",
@@ -20,6 +20,15 @@
       "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app"
     },
     {
+      "id": "7ad44f990f0c53ef",
+      "title": "Combatting adversarial distillation",
+      "summary": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
+      "publishedAt": "2026-11-20T10:00:00.000Z",
+      "category": "Models",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/combatting-adversarial-distillation"
+    },
+    {
       "id": "701a571706ec6c00",
       "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
       "summary": "",
@@ -27,6 +36,24 @@
       "category": "Models",
       "sourceName": "Hugging Face",
       "sourceUrl": "https://huggingface.co/blog/harness-adapters-at-scale"
+    },
+    {
+      "id": "8145fefb47ff1ca9",
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "summary": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "category": "Models",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/business/customer-stories/hebbia"
+    },
+    {
+      "id": "c1a2af93db54bfcf",
+      "title": "Can AI help scientists identify promising drug candidates?",
+      "summary": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "category": "Models",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/introducing-medchembench"
     },
     {
       "id": "534016fa5cae6870",
