@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-11-21T12:09:00.314Z",
+  "generatedAt": "2026-11-22T00:18:50.203Z",
   "items": [
+    {
+      "id": "3298713995b15316",
+      "title": "Can Anthropic afford to put safety first?",
+      "summary": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public on the Nasdaq last Thursday. The numbers are gigantic, but not really that important for this…",
+      "publishedAt": "2026-11-21T15:00:00.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure"
+    },
     {
       "id": "675650dffca0c9d4",
       "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
@@ -27,6 +36,15 @@
       "category": "Models",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/combatting-adversarial-distillation"
+    },
+    {
+      "id": "f54713977487b6ec",
+      "title": "llm-gemini 0.38.1",
+      "summary": "",
+      "publishedAt": "2026-11-20T03:01:57.000Z",
+      "category": "Models",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/20/llm-gemini/"
     },
     {
       "id": "701a571706ec6c00",
@@ -1260,24 +1278,6 @@
       "category": "Models",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/securing-our-frontier-model-training-environment"
-    },
-    {
-      "id": "3b5a2a6a27ab5490",
-      "title": "Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live",
-      "summary": "Anima expands what care teams can do with OpenAI models, giving them more capacity to respond to patients.",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "category": "Models",
-      "sourceName": "OpenAI",
-      "sourceUrl": "https://openai.com/index/anima"
-    },
-    {
-      "id": "2b3f616d26d343fe",
-      "title": "Does Your Model Run on AWS Trainium? Look It Up",
-      "summary": "",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "category": "Models",
-      "sourceName": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/torch-neuronx-model-support"
     }
   ]
 }
