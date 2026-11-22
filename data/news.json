@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-11-22T12:08:41.621Z",
+  "generatedAt": "2026-11-22T18:07:33.616Z",
   "items": [
+    {
+      "id": "1a10f1676d46fc01",
+      "title": "Perplexity and Intelligence",
+      "summary": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
+      "publishedAt": "2026-11-22T00:00:00.000Z",
+      "category": "Models",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/perplexity-and-intelligence"
+    },
     {
       "id": "3298713995b15316",
       "title": "Can Anthropic afford to put safety first?",
