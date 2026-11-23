@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-11-23T12:10:46.729Z",
+  "generatedAt": "2026-11-23T18:08:16.109Z",
   "items": [
+    {
+      "id": "4f5fe20de68e9dfd",
+      "title": "A more tailored Google Search that’s uniquely yours",
+      "summary": "Get more helpful Search responses by securely opting in to connect Google Wallet, Drive, and the Gemini app to Personal Intelligence in AI Mode.",
+      "publishedAt": "2026-11-23T17:00:00.000Z",
+      "category": "Models",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/"
+    },
     {
       "id": "1a10f1676d46fc01",
       "title": "Perplexity and Intelligence",
