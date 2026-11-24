@@ -1,6 +1,24 @@
 {
-  "generatedAt": "2026-11-23T18:08:16.109Z",
+  "generatedAt": "2026-11-24T12:11:01.821Z",
   "items": [
+    {
+      "id": "6545db87281ad58e",
+      "title": "Claude AI can review pull requests and ship fixes on its own now",
+      "summary": "Anthropic is launching some new Claude AI features to help software engineers ship code. As part of a new Claude Ship product being announced today, Claude now can review, fix, and approve pull requests. Engineers have already been able to take advantage of Claude's code review capabilities thanks…",
+      "publishedAt": "2026-11-23T20:00:00.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests"
+    },
+    {
+      "id": "609c363594e66867",
+      "title": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
+      "summary": "In separate but similar lawsuits filed on Monday, Oregon Attorney General Dan Rayfield and Virginia Attorney General Jay Jones accused SpaceX of violating state consumer protection laws by ignoring industry-standard safeguards and falsely promoting the safety of its X social media platform and…",
+      "publishedAt": "2026-11-23T18:26:47.000Z",
+      "category": "Models",
+      "sourceName": "The Verge AI",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit"
+    },
     {
       "id": "4f5fe20de68e9dfd",
       "title": "A more tailored Google Search that’s uniquely yours",
@@ -9,6 +27,15 @@
       "category": "Models",
       "sourceName": "Google AI Blog",
       "sourceUrl": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/"
+    },
+    {
+      "id": "1259b534687dd8b3",
+      "title": "Richpanel helps companies automate 50% of support in 30 days",
+      "summary": "1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+      "publishedAt": "2026-11-23T08:00:00.000Z",
+      "category": "Models",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/business/customer-stories/richpanel-ai-customer-support"
     },
     {
       "id": "1a10f1676d46fc01",
