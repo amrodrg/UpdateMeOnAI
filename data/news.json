@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T12:10:35.176Z",
+  "generatedAt": "2026-11-26T18:08:11.427Z",
   "items": [
     {
       "id": "a734da9d3a1d8760",
@@ -1314,24 +1314,6 @@
       "category": "Models",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/legora"
-    },
-    {
-      "id": "1c5b51464767c2ad",
-      "title": "Build specialized multimodal models with LFM3",
-      "summary": "",
-      "publishedAt": "2026-10-27T17:16:52.000Z",
-      "category": "Models",
-      "sourceName": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm3"
-    },
-    {
-      "id": "e960e8891f7d7ad8",
-      "title": "Genie 4: A new generation of world simulation",
-      "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
-      "publishedAt": "2026-10-27T16:01:38.000Z",
-      "category": "Models",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
     }
   ]
 }
