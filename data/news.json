@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-11-26T06:12:21.498Z",
+  "generatedAt": "2026-11-26T12:10:35.176Z",
   "items": [
+    {
+      "id": "a734da9d3a1d8760",
+      "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+      "summary": "",
+      "publishedAt": "2026-11-26T11:37:17.000Z",
+      "category": "Models",
+      "sourceName": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"
+    },
     {
       "id": "69c0601d70f93f1e",
       "title": "Copilot code review billing will default to the organization",
