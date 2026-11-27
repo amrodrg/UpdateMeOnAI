@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T06:12:07.450Z",
+  "generatedAt": "2026-11-27T18:08:19.795Z",
   "items": [
     {
       "id": "a734da9d3a1d8760",
@@ -1287,33 +1287,6 @@
       "category": "Models",
       "sourceName": "Hugging Face",
       "sourceUrl": "https://huggingface.co/blog/anydecisionmodel"
-    },
-    {
-      "id": "3e32bae570ff21ee",
-      "title": "Gemini 4 Carbon: Our next frontier model",
-      "summary": "",
-      "publishedAt": "2026-10-28T17:00:58.000Z",
-      "category": "Models",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
-    },
-    {
-      "id": "a395c7da350b5086",
-      "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
-      "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
-      "publishedAt": "2026-10-28T13:15:00.000Z",
-      "category": "Models",
-      "sourceName": "OpenAI",
-      "sourceUrl": "https://openai.com/index/openai-servicenow-partnership-expansion"
-    },
-    {
-      "id": "709cc8e2bd467b79",
-      "title": "Legora is building the agentic operating system for legal work",
-      "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
-      "publishedAt": "2026-10-28T09:30:00.000Z",
-      "category": "Models",
-      "sourceName": "OpenAI",
-      "sourceUrl": "https://openai.com/index/legora"
     }
   ]
 }
