@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T18:08:19.795Z",
+  "generatedAt": "2026-11-28T00:16:36.806Z",
   "items": [
     {
       "id": "a734da9d3a1d8760",
@@ -1269,24 +1269,6 @@
       "category": "Models",
       "sourceName": "OpenAI",
       "sourceUrl": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
-    },
-    {
-      "id": "b6b30743068c2627",
-      "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
-      "summary": "",
-      "publishedAt": "2026-10-29T00:00:00.000Z",
-      "category": "Models",
-      "sourceName": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/mistral-large4"
-    },
-    {
-      "id": "6394645bd5105adc",
-      "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
-      "summary": "",
-      "publishedAt": "2026-10-29T00:00:00.000Z",
-      "category": "Models",
-      "sourceName": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/anydecisionmodel"
     }
   ]
 }
